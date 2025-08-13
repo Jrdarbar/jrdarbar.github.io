@@ -390,6 +390,33 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
+/* LinkedIn Styles */
+.linkedin-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    transition: transform 0.2s;
+}
+.linkedin-link:hover {
+    transform: scale(1.12);
+}
+.linkedin-icon {
+    vertical-align: middle;
+    box-shadow: 0 2px 8px #0A66C299;
+    border-radius: 8px;
+}
+
+.gmail-icon {
+    vertical-align: middle;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 8px #ea433599;
+    border-radius: 8px;
+}
+.email-top a:hover .gmail-icon {
+    transform: scale(1.12);
+}
+
 /* Animations */
 @keyframes fadeInLeft {
     from { opacity: 0; transform: translateX(-50px); }
