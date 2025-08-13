@@ -168,18 +168,19 @@ nav ul li a:hover {
 
 .email-top {
     position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 0.9rem;
+    top: 18px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 10;
 }
 
 .email-top a {
-    color: #ffcc70;
-    text-decoration: none;
-}
-
-.email-top a:hover {
-    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 /* About Section - Advanced Card */
