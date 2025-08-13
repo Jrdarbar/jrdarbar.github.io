@@ -185,6 +185,46 @@ nav ul li a:hover {
     padding: 0;
 }
 
+/* Add at the end or near your nav styles */
+.global-top-buttons {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1002;
+    display: flex;
+    gap: 0.5rem;
+    background: rgba(34, 40, 49, 0.95);
+    padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+    border-radius: 0 0 0 2rem;
+    box-shadow: 0 2px 12px #1976d244;
+}
+.nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 0.3rem;
+    border-radius: 50%;
+    transition: background 0.2s;
+    cursor: pointer;
+    margin: 0 2px;
+}
+.nav-btn:hover {
+    background: #1976d2;
+    box-shadow: 0 2px 8px #1976d288;
+}
+@media (max-width: 700px) {
+    .global-top-buttons {
+        flex-wrap: wrap;
+        padding: 0.3rem 0.5rem;
+        border-radius: 0 0 0 1rem;
+    }
+    .nav-btn {
+        padding: 0.2rem;
+    }
+}
+
 /* About Section - Advanced Card */
 .about-section {
     display: flex;
