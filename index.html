@@ -15,6 +15,7 @@
             <li><a href="#" onclick="showSection('home')">Home</a></li>
             <li><a href="#" onclick="showSection('about')">About</a></li>
             <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+            <li><a href="#" onclick="showSection('blog')">Blog</a></li>
         </ul>
     </nav>
 </header>
@@ -35,6 +36,22 @@
                 <path d="M10.667 13.333H13.333V22H10.667V13.333ZM12 11.667C12.7364 11.667 13.3333 11.0701 13.3333 10.3337C13.3333 9.59732 12.7364 9.00033 12 9.00033C11.2636 9.00033 10.6667 9.59732 10.6667 10.3337C10.6667 11.0701 11.2636 11.667 12 11.667ZM14.667 13.333H17.333V14.6667H17.36C17.7333 13.96 18.6267 13.2267 19.8933 13.2267C22.2933 13.2267 22.6667 14.8133 22.6667 16.8133V22H20V17.3333C20 16.2267 19.7867 15.3333 18.6667 15.3333C17.5467 15.3333 17.3333 16.2267 17.3333 17.3333V22H14.6667V13.333Z" fill="white"/>
             </svg>
         </a>
+        <a href="#" class="image-gallery-link" title="View Project Images" onclick="showSection('project-images')">
+            <svg class="gallery-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48" fill="none">
+            <rect width="48" height="48" rx="12" fill="#fff"/>
+            <rect x="10" y="14" width="28" height="20" rx="4" fill="#1976d2"/>
+            <rect x="14" y="18" width="8" height="8" rx="2" fill="#90caf9"/>
+            <path d="M18 30l6-8 8 10" stroke="#ffcc70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        </a>
+        <a href="#" class="blog-link" title="Read Blog" onclick="showSection('blog')">
+            <svg class="blog-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="12" fill="#fff"/>
+                <rect x="10" y="14" width="28" height="20" rx="4" fill="#1976d2"/>
+                <rect x="14" y="18" width="20" height="12" rx="2" fill="#ffcc70"/>
+                <path d="M18 22h12M18 26h8" stroke="#1976d2" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </a>
     </div>
 
     <div class="hero-container">
@@ -52,7 +69,7 @@
             <div class="stats">
                 <div class="stat"><span>10+</span> Years Experience</div>
                 <div class="stat"><span>50+</span> Projects Delivered</div>
-                <div class="stat"><span>15+</span> Industries Served</div>
+                <div class="stat"><span>25+</span> Industries Served</div>
             </div>
 
             <!-- Buttons -->
@@ -63,7 +80,7 @@
         </div>
 
         <!-- RIGHT IMAGE -->
-        <div class="hero-right">
+        <div class="hero-right">    
             <img src="Main Image.jpg" alt="Main Image" class="main-image">
         </div>
     </div>
@@ -420,7 +437,66 @@
     </div>
 </div>
 
-<!-- SCRIPTS -->
+<!-- PROJECT IMAGES SECTION -->
+<section id="project-images" class="project-images-section hidden">
+    <h2>Project Screenshots</h2>
+    <div class="project-images-gallery">
+        <img src="Phase Configuration.PNG" alt="Phase Configuration">
+        <img src="Main View.PNG" alt="Main View">
+        <img src="Capture5.PNG" alt="Capture5">
+        <img src="Capture4.PNG" alt="Capture4">
+        <img src="Capture3.PNG" alt="Capture3">
+        <img src="Capture2.PNG" alt="Capture2">
+        <img src="Capture1.PNG" alt="Capture1">
+        <img src="Capture.PNG" alt="Capture">
+        <img src="Phase Fault Configuration.PNG" alt="Phase Fault Configuration">
+        <img src="Phase Message Configuration.PNG" alt="Phase Message Configuration">
+        <img src="Phase Instruments Configuration.PNG" alt="Phase Instruments Configuration">
+        <img src="Phase Parameter Configuration.PNG" alt="Phase Parameter Configuration">
+        <img src="Phase Button view for Parameter_Instruments_Messages_Phase Fault.PNG" alt="Phase Button view for Parameter_Instruments_Messages_Phase Fault">
+        <img src="7.PNG" alt="7">
+        <img src="6.PNG" alt="6">
+        <img src="5.PNG" alt="5">
+        <img src="4.PNG" alt="4">
+        <img src="3.PNG" alt="3">
+        <img src="2.PNG" alt="2">
+        <img src="1.PNG" alt="1">
+    </div>
+</section>
+
+<!-- IMAGE MODAL FOR FULLSCREEN VIEW -->
+<div id="image-modal" class="image-modal hidden">
+    <span class="close-btn" onclick="closeImageModal()">&times;</span>
+    <img id="modal-img" src="" alt="Full Project Screenshot">
+</div>
+
+<!-- BLOG SECTION (Project-style grid, 3 cards, modal for full blog) -->
+<section id="blog" class="blog-section hidden">
+    <h2 class="blog-title">📝 <span style="color:#ffcc70;text-shadow:0 2px 8px #1976d2;">Automation Engineer's Blog</span> 🚀</h2>
+    <div class="blog-list">
+        <!-- Blog Card 1 -->
+        <div class="blog-card-mini" onclick="openBlogModal(1)">
+            <h3>💻 Why Learning Any Coding Language is Good for an Automation Engineer</h3>
+        </div>
+        <!-- Blog Card 2 -->
+        <div class="blog-card-mini" onclick="openBlogModal(2)">
+            <h3>🛠️ PLC Programming Best Practices – Lessons from the Field</h3>
+        </div>
+        <!-- Blog Card 3 -->
+        <div class="blog-card-mini" onclick="openBlogModal(3)">
+            <h3>🌐 The Rise of IIoT – How Automation Engineers Can Stay Ahead</h3>
+        </div>
+    </div>
+</section>
+
+<!-- BLOG MODAL (Full blog, wide) -->
+<div id="blog-modal" class="modal hidden">
+    <div class="modal-content blog-modal-content-wide">
+        <span class="close-btn" onclick="closeBlogModal()">&times;</span>
+        <div id="modal-blog-detail"></div>
+    </div>
+</div>
+
 <script>
     // Section switching
     function showSection(id) {
@@ -478,6 +554,161 @@
     document.querySelectorAll('.project-card').forEach((card, idx) => {
         card.onclick = () => showProjectDetail(idx + 1);
     });
+
+    // Image modal functionality
+    document.querySelectorAll('.project-images-gallery img').forEach(img => {
+        img.onclick = function() {
+            document.getElementById('modal-img').src = this.src;
+            document.getElementById('image-modal').classList.remove('hidden');
+        }
+    });
+
+    function closeImageModal() {
+        document.getElementById('image-modal').classList.add('hidden');
+        document.getElementById('modal-img').src = "";
+    }
+
+    // Blog modal functionality
+    document.querySelectorAll('.blog-card').forEach(card => {
+        card.onclick = function() {
+            document.getElementById('modal-blog-detail').innerHTML = this.innerHTML;
+            document.getElementById('blog-modal').classList.remove('hidden');
+        }
+    });
+    function closeBlogModal() {
+        document.getElementById('blog-modal').classList.add('hidden');
+        document.getElementById('modal-blog-detail').innerHTML = "";
+    }
+    document.getElementById('blog-modal').onclick = function(e) {
+        if (e.target === this) closeBlogModal();
+    }
+
+    // Blog content data
+const blogContents = [
+`<h2>💻 Why Learning Any Coding Language is Good for an Automation Engineer</h2>
+<p><b>Introduction</b><br>
+Automation is no longer just about wiring control panels and writing Ladder Logic. With Industry 4.0 and IIoT reshaping factories, engineers now work in a world where machines, software, and data are deeply connected.<br>
+In this landscape, knowing at least one general-purpose coding language — like Python, C#, or JavaScript — can be a game-changer.
+</p>
+<ul>
+<li><b>1. More Tools, Better Solutions</b>
+    <ul>
+        <li>PLC languages are great for controlling machines but limited for tasks like:</li>
+        <ul>
+            <li>Processing large amounts of data</li>
+            <li>Automating repetitive engineering work</li>
+            <li>Building custom integrations</li>
+        </ul>
+        <li>A coding language adds flexibility — you can create scripts, dashboards, and data pipelines that traditional PLC programming can’t handle.</li>
+    </ul>
+</li>
+<li><b>2. Seamless IT–OT Integration</b>
+    <ul>
+        <li>Modern plants demand real-time data flow between shop-floor equipment and business systems.</li>
+        <li>With coding skills, you can:</li>
+        <ul>
+            <li>Send PLC data to the cloud using MQTT or APIs</li>
+            <li>Build middleware to connect control systems with ERP/MES</li>
+            <li>Create quick visual dashboards for decision-makers</li>
+        </ul>
+    </ul>
+</li>
+<li><b>3. Save Time and Boost Efficiency</b>
+    <ul>
+        <li>Many engineering tasks are repetitive — configuring hundreds of PLC tags, generating reports, renaming files.</li>
+        <li>A simple script in Python or PowerShell can automate these jobs, saving hours and reducing errors.</li>
+    </ul>
+</li>
+<li><b>4. Future-Proof Your Career</b>
+    <ul>
+        <li>Coding expands your role beyond traditional automation. It opens opportunities in:</li>
+        <ul>
+            <li>IIoT and smart factory projects</li>
+            <li>Data analytics and AI integration</li>
+            <li>Cross-industry system design</li>
+        </ul>
+        <li>When you can bridge hardware and software, you become far more valuable to any organization.</li>
+    </ul>
+</li>
+<li><b>5. Getting Started</b>
+    <ul>
+        <li>Pick an easy language (Python is a great start)</li>
+        <li>Automate one small task in your daily work</li>
+        <li>Grow gradually into data processing, APIs, or custom tools</li>
+    </ul>
+</li>
+</ul>
+
+`,
+`<h2>🛠️ PLC Programming Best Practices – Lessons from the Field</h2>
+<ul>
+<li><b>Introduction: More Than Just Logic</b><br>
+A PLC program might be “just code,” but when it’s controlling a multimillion-dollar machine, every rung matters. Writing PLC code isn’t just about making things work — it’s about making them reliable, safe, and easy to maintain.
+</li>
+<li><b>Keep It Simple:</b> Simple, readable code is faster to troubleshoot and less prone to errors.<br>
+<i>Example:</i> Instead of nesting multiple timers and comparisons in a single rung, break them into separate steps.
+</li>
+<li><b>Use Descriptive Tag Names:</b> Use names like <code>Motor_Conveyor_Start</code> or <code>Heater_Temp_OK</code> for clarity.</li>
+<li><b>Modularize Your Code:</b> Organize related functions into separate routines or AOIs for reusability and easier testing.</li>
+<li><b>Comment Like a Teacher:</b> Document what the code is doing and why, not just how.<br>
+<i>Tip:</i> Add comments at the start of each routine summarizing its purpose.
+</li>
+<li><b>Plan for Troubleshooting:</b> Add status bits, diagnostic messages, and easy-to-read indicators in your HMI.<br>
+<i>Example:</i> Use an alarm summary screen with clear messages like “Low Tank Level – Pump Stopped” instead of “Fault Code 003”.
+</li>
+<li><b>Test in Simulation:</b> Run your logic in a simulation environment before deploying to a live system.</li>
+<li><b>Real-World Story:</b> On a packaging line project, the PLC code had minimal comments, generic tag names, and deeply nested logic. A simple sensor fault took four hours to troubleshoot. After rewriting with clear tags, modular routines, and on-screen diagnostics, similar issues were resolved in under 10 minutes.
+</li>
+<li><b>Final Thoughts:</b> Great PLC code is like great engineering — it’s as simple as possible, but no simpler. Write with clarity, structure, and foresight for systems that are easier to run, maintain, and upgrade.
+</li>
+</ul>
+`,
+`<h2>🌐 The Rise of IIoT – How Automation Engineers Can Stay Ahead</h2>
+<ul>
+<li><b>Introduction: The Industry Is Changing</b><br>
+Walk into any modern manufacturing plant and you’ll notice something new — it’s not just machines running in isolation anymore. Systems are connected, data flows in real time, and decision-making happens faster than ever. This is the Industrial Internet of Things (IIoT) in action.<br>
+For automation engineers, this is more than just a buzzword. It’s a major shift in how we design, monitor, and maintain systems. The good news? If you understand IIoT, you’ll be in high demand.
+</li>
+<li><b>What Is IIoT in Simple Terms?</b><br>
+IIoT is about connecting industrial machines, sensors, and devices to networks so they can communicate, share data, and even make decisions with minimal human intervention.<br>
+Think of it as bridging the shop floor to the top floor — PLCs and sensors send performance data to cloud systems, which managers can use for planning, maintenance, and optimization.
+</li>
+<li><b>Why IIoT Matters for Automation Engineers</b>
+<ul>
+<li>Expanded Skill Requirements: Now you need to understand protocols like OPC UA, MQTT, Modbus TCP, and cloud integration basics.</li>
+<li>Data Is the New Gold: Engineers who can collect, process, and interpret data have a competitive advantage.</li>
+<li>Cross-Domain Collaboration: IIoT brings IT and OT closer together. You’ll work with software developers, data analysts, and cybersecurity specialists more than ever.</li>
+</ul>
+</li>
+<li><b>How to Stay Ahead</b>
+<ul>
+<li>Learn Modern Protocols — MQTT, OPC UA, REST APIs.</li>
+<li>Get Familiar with Edge Devices — Understand how edge computing bridges the gap between field devices and the cloud.</li>
+<li>Understand Cloud Platforms — AWS IoT Core, Azure IoT Hub, Ignition Cloud Edition.</li>
+<li>Practice Data Visualization — Tools like Grafana, Power BI, or Ignition Perspective help you present industrial data in meaningful ways.</li>
+</ul>
+</li>
+<li><b>Real-World Example</b><br>
+A food processing plant integrated IIoT sensors on their conveyor belts to monitor motor vibration. With real-time data sent via MQTT to an analytics platform, they detected potential motor failures weeks before breakdowns — saving thousands in downtime costs.
+</li>
+<li><b>Final Thoughts</b><br>
+IIoT isn’t replacing automation engineers — it’s empowering them. By learning the new tools and languages of connected industry, you’ll be more than a control system expert — you’ll be a key driver of digital transformation.
+</li>
+</ul>
+`
+];
+
+function openBlogModal(idx) {
+    document.getElementById('modal-blog-detail').innerHTML = blogContents[idx-1];
+    document.getElementById('blog-modal').classList.remove('hidden');
+}
+function closeBlogModal() {
+    document.getElementById('blog-modal').classList.add('hidden');
+    document.getElementById('modal-blog-detail').innerHTML = "";
+}
+document.getElementById('blog-modal').onclick = function(e) {
+    if (e.target === this) closeBlogModal();
+}
 </script>
 
 </body>
