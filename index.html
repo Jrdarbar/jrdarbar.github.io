@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaydip Darbar - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1 class="logo">Jaydip Darbar</h1>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('about')">About</a></li>
+            <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero center-hero">
+    <div class="email-top">
+        📧 <a href="mailto:jrdarbar1996@gmail.com">jrdarbar1996@gmail.com</a>
+    </div>
+
+    <div class="hero-container">
+        <!-- LEFT CONTENT -->
+        <div class="hero-left">
+            <h2>Hello, I'm</h2>
+            <h1 class="highlight">Jaydip Darbar</h1>
+            <h3 class="typing-text"></h3>
+            <p class="summary">
+                I help industries achieve smart manufacturing through scalable Industrial Automation & IIoT solutions.
+                From PLC programming to cloud-connected dashboards, I design systems that run reliably and securely.
+            </p>
+
+            <!-- Quick Stats -->
+            <div class="stats">
+                <div class="stat"><span>10+</span> Years Experience</div>
+                <div class="stat"><span>50+</span> Projects Delivered</div>
+                <div class="stat"><span>15+</span> Industries Served</div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="btn-group">
+                <a href="#" class="btn" onclick="showSection('about')">About Me</a>
+                <a href="#" class="btn btn-outline" onclick="showSection('projects')">View Projects</a>
+            </div>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="hero-right">
+            <img src="Main Image.jpg" alt="Main Image" class="main-image">
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about-section projects hidden">
+    <div class="about-card">
+        <div class="about-header">
+            <span class="about-avatar">👨‍💻</span>
+            <h2>Jaydip Darbar</h2>
+            <p class="about-title">💼 Sr. Project Engineer | Industrial Automation & IIoT | 10+ Years Experience 💼</p>
+        </div>
+        <div class="about-body">
+            <p>
+                <span class="about-emoji">🚀</span>
+                <b>Profile:</b><br>
+                Dynamic and results-driven Senior Project Engineer with over 9 years of experience in Industrial Automation and IIoT integration. Specialized in Rockwell Automation platforms and modern industrial communication systems. Deep expertise in designing, implementing, and optimizing control systems, data acquisition, and smart manufacturing solutions.
+            </p>
+            <p>
+                <span class="about-emoji">🛠️</span>
+                <b>Core Automation Expertise:</b><br>
+                Rockwell Automation: PlantPAx DCS, ControlLogix, CompactLogix, FactoryTalk View SE/ME, FT Historian<br>
+                Redundant control system design, SCADA distribution with system failover<br>
+                Protocols: Modbus TCP/RTU, OPC DA/UA, Ethernet/IP integration<br>
+                SQL Database & Reporting: Historian to SQL, data visualization using Grafana, reports in Visual Studio
+            </p>
+            <hr>
+            <p>
+                <span class="about-emoji">🌐</span>
+                <b>Recent IIoT-Driven Projects:</b><br>
+                ✅ Edge-to-Cloud Integration using Kepware, MQTT, Node-RED to push data to enterprise dashboards<br>
+                ✅ Configured HiveMQ and Kafka brokers for scalable data streaming across industrial sites<br>
+                ✅ Built custom alerts via SMTP (Email) and SMS notifications for real-time production events<br>
+                ✅ Developed lightweight Grafana dashboards for machine OEE, downtime, and energy analytics<br>
+                ✅ Connected legacy PLCs to IIoT platforms using OPC UA and KepServerEX, enabling remote access<br>
+                ✅ Implemented cybersecurity policies and VLAN segmentation using Stratix 5950 switches and firewalls
+            </p>
+            <hr>
+            <p>
+                <span class="about-emoji">🌟</span>
+                <b>Key Project Highlights:</b><br>
+                Spearheaded automation solutions for pharmaceuticals, glass manufacturing, and dairy processing industries<br>
+                Led end-to-end FAT, SAT, and commissioning for projects in India, Sri Lanka<br>
+                Architected plant-wide OT networks using Layer 2/3 switches, NAT configuration, and secure remote access<br>
+                Delivered training and documentation for IT/OT handover to customer support teams
+            </p>
+            <hr>
+            <p>
+                <span class="about-emoji">📈</span>
+                <b>Looking Ahead:</b><br>
+                Focused on enabling smart factory transformations through scalable IIoT frameworks, cloud-ready data pipelines, and enhanced operational intelligence.
+            </p>
+            <p>
+                <span class="about-emoji">📬</span>
+                <b>Let’s Connect:</b><br>
+                For collaboration, consulting, or training, email <a href="mailto:jrdarbar1996@gmail.com">jrdarbar1996@gmail.com</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="projects hidden">
+    <h2>Highlighted Projects</h2>
+    <div class="project-list">
+        <div class="project-card">
+            <!-- Cloud/PLC Icon -->
+            <svg class="project-icon" viewBox="0 0 48 48">
+                <ellipse cx="24" cy="32" rx="16" ry="10" fill="#90caf9"/>
+                <rect x="18" y="18" width="12" height="8" rx="2" fill="#1976d2"/>
+                <rect x="22" y="10" width="4" height="8" rx="2" fill="#90caf9"/>
+            </svg>
+            <h3>Cloud-Connected PLC Data Pipeline</h3>
+            <p>Developed real-time PLC-to-cloud pipeline using Node-RED & MQTT with SQL Server logging.</p>
+        </div>
+        <div class="project-card">
+            <!-- Kafka Icon -->
+            <svg class="project-icon" viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="18" fill="#90caf9"/>
+                <rect x="20" y="12" width="8" height="24" rx="4" fill="#1976d2"/>
+                <circle cx="24" cy="24" r="6" fill="#1565c0"/>
+            </svg>
+            <h3>Kafka-Based IIoT Streaming</h3>
+            <p>Built scalable industrial streaming pipelines with secure remote access using ZeroTier VPN.</p>
+        </div>
+        <div class="project-card">
+            <!-- Modbus Icon -->
+            <svg class="project-icon" viewBox="0 0 48 48">
+                <rect x="8" y="16" width="32" height="16" rx="8" fill="#90caf9"/>
+                <circle cx="16" cy="24" r="4" fill="#1976d2"/>
+                <circle cx="32" cy="24" r="4" fill="#1976d2"/>
+            </svg>
+            <h3>Modbus Data Collection Without PLC</h3>
+            <p>Direct Modbus RTU/TCP collection with Python (pymodbus) dashboard—reduced hardware costs.</p>
+        </div>
+        <div class="project-card">
+            <!-- User/Lock Icon -->
+            <svg class="project-icon" viewBox="0 0 48 48">
+                <circle cx="24" cy="18" r="8" fill="#90caf9"/>
+                <rect x="12" y="28" width="24" height="12" rx="6" fill="#1976d2"/>
+                <rect x="20" y="32" width="8" height="8" rx="4" fill="#1565c0"/>
+            </svg>
+            <h3>Python-Based 21 CFR Part 11 User Management</h3>
+            <p>PySide6 app with RBAC, audit trails, and SCADA tag integration for regulated industries.</p>
+        </div>
+        <div class="project-card">
+            <!-- Batch Icon -->
+            <svg class="project-icon" viewBox="0 0 48 48">
+                <rect x="12" y="12" width="24" height="24" rx="8" fill="#90caf9"/>
+                <rect x="20" y="20" width="8" height="16" rx="4" fill="#1976d2"/>
+            </svg>
+            <h3>Custom Python Batch Manager</h3>
+            <p>Replicated Rockwell LBSM logic in Python with unlimited recipe storage and batch tracking.</p>
+        </div>
+        <div class="project-card">
+            <!-- Dashboard Icon -->
+            <svg class="project-icon" viewBox="0 0 48 48">
+                <rect x="8" y="8" width="32" height="32" rx="8" fill="#90caf9"/>
+                <rect x="16" y="16" width="8" height="16" rx="4" fill="#1976d2"/>
+                <rect x="28" y="24" width="8" height="8" rx="4" fill="#1565c0"/>
+            </svg>
+            <h3>Smart IIoT Operations Dashboard</h3>
+            <p>Streamlit-based dashboard with Parquet storage, chat, logbook, and maintenance tracking.</p>
+        </div>
+        <div class="project-card">
+            <!-- Grafana Icon -->
+            <svg class="project-icon" viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="20" fill="#ffa726"/>
+                <circle cx="24" cy="24" r="10" fill="#fffde7"/>
+                <path d="M24 14 L28 24 L24 34 L20 24 Z" fill="#fb8c00"/>
+            </svg>
+            <h3>Centralized Grafana Dashboard</h3>
+            <p>Global plant performance dashboards with secure, vendor-neutral visualization.</p>
+        </div>
+    </div>
+    <div class="note-box">
+        <strong>
+            For more details, source code, documentation, or project understanding,<br>
+            please contact me at <a href="mailto:jrdarbar1996@gmail.com">jrdarbar1996@gmail.com</a>.
+        </strong>
+    </div>
+
+    <!-- PROJECT DETAIL MODALS -->
+    <div class="project-detail hidden" id="project-detail-1">
+        <h4>Cloud-Connected PLC Data Pipeline</h4>
+        <p><b>Purpose:</b> Enable real-time plant-to-cloud data transfer for smart manufacturing monitoring — low-latency visibility across the shop floor and remote locations.</p>
+        <ul>
+            <li><b>Detailed Architecture:</b>
+                <ul>
+                    <li>PLC → Node-RED (on-premise gateway)</li>
+                    <li>Industrial drivers: node-red-contrib-opcua for OPC UA, or node-red-contrib-ethernet-ip for Allen-Bradley.</li>
+                    <li>Tag scan rates tuned to avoid network congestion (e.g., 1 sec for fast process variables, 10 sec for slow).</li>
+                    <li>Node-RED → MQTT (HiveMQ Cloud)</li>
+                    <li>Payload format: JSON (flattened keys for easy parsing).</li>
+                    <li>Topic structure: plant/&lt;line&gt;/&lt;machine&gt;/&lt;tagName&gt; for logical grouping.</li>
+                    <li>QoS: Usually 1 (at least once), but QoS 2 for critical values.</li>
+                    <li>HiveMQ Cloud → Subscribers (SCADA dashboards, Edge AI/ML apps)</li>
+                    <li>Node-RED → Microsoft SQL Server (via node-red-contrib-mssql-plus or REST API)</li>
+                    <li>Table design: timestamped rows, indexed by tag name + time.</li>
+                </ul>
+            </li>
+            <li><b>Why this matters:</b> MQTT makes the architecture event-driven and scalable, while SQL provides a time-series history for BI tools. This hybrid ensures both speed and traceability.</li>
+            <li><b>Challenges & Mitigations:</b>
+                <ul>
+                    <li>MQTT message bursts → Implement payload batching in Node-RED.</li>
+                    <li>PLC comm load → Use OPC UA subscriptions instead of polling.</li>
+                    <li>Cloud connectivity loss → Use MQTT persistent sessions or offline queue in Node-RED.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="project-detail hidden" id="project-detail-2">
+        <h4>Kafka-Based IIoT Streaming with Secure Access</h4>
+        <p><b>Purpose:</b> Handle high-volume, high-frequency industrial data with built-in replay/buffering, enabling global secure access.</p>
+        <ul>
+            <li><b>Detailed Architecture:</b>
+                <ul>
+                    <li>Node-RED → Kafka Producer (converts PLC/sensor data into Kafka messages)</li>
+                    <li>Topic design: plant.line1.temp or hierarchical: plant/line1/temp</li>
+                    <li>Keyed messages for partition ordering (e.g., device ID as key)</li>
+                    <li>Kafka Broker Cluster (replication factor ≥ 2 for high availability)</li>
+                    <li>Retention policy set to weeks/months for replay capability</li>
+                    <li>Kafka Consumer → SQL Server (batch insert, downsampling)</li>
+                    <li>Remote Access via ZeroTier (virtual static IP, no VPN appliances)</li>
+                    <li>Dashboards stream live from Kafka or read historical from SQL</li>
+                </ul>
+            </li>
+            <li><b>Why this matters:</b> Kafka supports backfill and replay, essential in intermittent network environments.</li>
+            <li><b>Challenges & Mitigations:</b>
+                <ul>
+                    <li>Kafka learning curve → Pre-built connectors in Node-RED help.</li>
+                    <li>Large DB growth → Use tiered storage (Kafka to S3, SQL for latest only).</li>
+                    <li>Remote data security → ZeroTier with ACL rules for access control.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="project-detail hidden" id="project-detail-3">
+        <h4>Modbus RTU/TCP Data Collection Without PLC</h4>
+        <p><b>Purpose:</b> Directly read field sensors/meters to cut PLC costs in small systems.</p>
+        <ul>
+            <li><b>Detailed Architecture:</b>
+                <ul>
+                    <li>Field Device → RS485 (Modbus RTU)</li>
+                    <li>Baud rate, parity, stop bits set according to manufacturer specs</li>
+                    <li>Modbus polling interval optimized for sensor update rate</li>
+                    <li>pymodbus (Python) runs as a polling loop</li>
+                    <li>Exception handling for timeouts and CRC errors</li>
+                    <li>Dashboard: Flask/Dash for web-based monitoring</li>
+                    <li>Real-time updates using Flask-SocketIO or Dash callbacks</li>
+                    <li>Optional Logging: SQLite or CSV append</li>
+                </ul>
+            </li>
+            <li><b>Why this matters:</b> Removes PLC for simple measurement tasks, ideal for utilities, energy meters, and water plants.</li>
+            <li><b>Challenges & Mitigations:</b>
+                <ul>
+                    <li>RS485 noise → Use shielded twisted pair and termination resistors.</li>
+                    <li>Multiple devices → Correct addressing and master/slave handling.</li>
+                    <li>Python crashes → Use watchdog scripts or systemd services to auto-restart.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="project-detail hidden" id="project-detail-4">
+        <h4>Python-Based User Management (21 CFR Part 11 Compliant)</h4>
+        <p><b>Purpose:</b> Replace legacy SCADA authentication with a modern, regulatory-compliant system.</p>
+        <ul>
+            <li><b>Detailed Architecture:</b>
+                <ul>
+                    <li>PySide6 Frontend: Login screen, user creation, password reset dialogs</li>
+                    <li>Modern styling (Qt Stylesheets) to match SCADA themes</li>
+                    <li>SQLite Backend: Encrypted password storage (bcrypt or Argon2)</li>
+                    <li>Audit log table with user_id, action, timestamp, signature</li>
+                    <li>Role-Based Access Control (RBAC): Operator, Engineer, Admin</li>
+                    <li>Fine-grained permissions mapped to screens/actions</li>
+                    <li>Audit Trail: Every change digitally signed (hash + user key)</li>
+                    <li>Integration: REST API or OPC UA method call to SCADA/HMI</li>
+                </ul>
+            </li>
+            <li><b>Why this matters:</b> 21 CFR Part 11 is mandatory for pharma, biotech, and food — this provides a paperless, fully traceable system.</li>
+            <li><b>Challenges & Mitigations:</b>
+                <ul>
+                    <li>User training → Simple UI, avoid over-complication.</li>
+                    <li>Database security → Encrypted transport & storage.</li>
+                    <li>Password policies → Enforce length, complexity, expiry.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="project-detail hidden" id="project-detail-5">
+        <h4>Custom Python Batch Manager (Inspired by Rockwell LBSM)</h4>
+        <p><b>Purpose:</b> Implement batch control outside PLC to overcome memory limits and improve recipe flexibility.</p>
+        <ul>
+            <li><b>Detailed Architecture:</b>
+                <ul>
+                    <li>SQL Server Recipes: Unit → Phase → Step hierarchy</li>
+                    <li>Parameters (temp, speed, duration) stored per step</li>
+                    <li>Python Server Logic: State machine executes batch phases</li>
+                    <li>Sends commands to PLC (e.g., via OPC UA or Modbus TCP)</li>
+                    <li>PySide6 UI: Drag-and-drop recipe editor, real-time execution display</li>
+                    <li>Logging: Batch start/stop, phase completion times, deviations</li>
+                    <li>Export to Excel/PDF</li>
+                </ul>
+            </li>
+            <li><b>Why this matters:</b> Removes PLC program change overhead for new recipes — faster commissioning.</li>
+            <li><b>Challenges & Mitigations:</b>
+                <ul>
+                    <li>PLC sync → Heartbeat tag to avoid drift.</li>
+                    <li>Network latency → Preload next phase before step ends.</li>
+                    <li>Fail-safes → Auto-hold batch if comm loss occurs.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="project-detail hidden" id="project-detail-6">
+        <h4>Smart IIoT Dashboard with Streamlit</h4>
+        <p><b>Purpose:</b> Unify operations, communication, and reporting in one app.</p>
+        <ul>
+            <li><b>Detailed Architecture:</b>
+                <ul>
+                    <li>Streamlit Web App: Sections for Live Data, Maintenance Logs, Chat, Reports</li>
+                    <li>Uses WebSockets for instant updates</li>
+                    <li>Data Storage: Parquet for high-speed read/write, historical archiving in SQL Server</li>
+                    <li>Built-in Chat: LAN-based, no internet dependency, messages stored in Parquet</li>
+                    <li>Reports: PDF generation with ReportLab/WeasyPrint, auto-send via email</li>
+                </ul>
+            </li>
+            <li><b>Why this matters:</b> Integrates data + communication + reporting into one lightweight tool — great for small to mid-size plants.</li>
+            <li><b>Challenges & Mitigations:</b>
+                <ul>
+                    <li>Browser performance → Paginate large datasets.</li>
+                    <li>Chat spam → Role-based chat permissions.</li>
+                    <li>File storage → Clean-up scripts to prevent disk bloat.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="project-detail hidden" id="project-detail-7">
+        <h4>Centralized Grafana Dashboard</h4>
+        <p><b>Purpose:</b> Give global visibility of plant performance without installing dashboards locally.</p>
+        <ul>
+            <li><b>Detailed Architecture:</b>
+                <ul>
+                    <li><b>Data Sources:</b>
+                        <ul>
+                            <li>SQL Server (production data, alarms)</li>
+                            <li>InfluxDB (time-series process data)</li>
+                        </ul>
+                    </li>
+                    <li><b>Grafana:</b>
+                        <ul>
+                            <li>Multi-database queries</li>
+                            <li>Alerting (email, Slack, Teams)</li>
+                        </ul>
+                    </li>
+                    <li><b>Secure Access:</b>
+                        <ul>
+                            <li>Nginx reverse proxy with HTTPS</li>
+                            <li>LDAP/SSO for corporate authentication</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><b>Why this matters:</b> Grafana provides vendor-neutral visualization — all plants, all protocols, one dashboard.</li>
+            <li><b>Challenges & Mitigations:</b>
+                <ul>
+                    <li>DB query load → Use aggregated tables or continuous queries.</li>
+                    <li>Internet security → Restrict by IP or VPN for external access.</li>
+                    <li>Time zone differences → Use Grafana’s built-in time zone selector.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- PROJECT DETAIL MODAL -->
+<div id="project-modal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeProjectModal()">&times;</span>
+        <div id="modal-detail"></div>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<script>
+    // Section switching
+    function showSection(id) {
+        document.querySelectorAll('section').forEach(sec => sec.classList.add('hidden'));
+        document.getElementById(id).classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Typing effect
+    const typingElement = document.querySelector(".typing-text");
+    const textArray = [
+        "Sr. Project Engineer",
+        "Industrial Automation Specialist",
+        "IIoT Integration Expert"
+    ];
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+        const currentText = textArray[textIndex];
+        typingElement.textContent = currentText.substring(0, charIndex);
+
+        if (!isDeleting && charIndex < currentText.length) {
+            charIndex++;
+            setTimeout(typeEffect, 100);
+        } else if (isDeleting && charIndex > 0) {
+            charIndex--;
+            setTimeout(typeEffect, 50);
+        } else {
+            isDeleting = !isDeleting;
+            if (!isDeleting) {
+                textIndex = (textIndex + 1) % textArray.length;
+            }
+            setTimeout(typeEffect, 800);
+        }
+    }
+    typeEffect();
+
+    // Show project details when a card is clicked
+    function showProjectDetail(num) {
+        // Get the detail HTML
+        const detail = document.getElementById('project-detail-' + num);
+        if (detail) {
+            document.getElementById('modal-detail').innerHTML = detail.innerHTML;
+            document.getElementById('project-modal').classList.remove('hidden');
+        }
+    }
+
+    function closeProjectModal() {
+        document.getElementById('project-modal').classList.add('hidden');
+    }
+
+    // Attach click handlers to each project card
+    document.querySelectorAll('.project-card').forEach((card, idx) => {
+        card.onclick = () => showProjectDetail(idx + 1);
+    });
+</script>
+
+</body>
+</html>
