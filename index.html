@@ -5,81 +5,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaydip Darbar - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .header-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5em;
+            padding: 0.7em 1.5em 0.7em 2em;
+            background: transparent;
+        }
+        .author-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #ffcc70;
+            margin-right: 0.7em;
+            white-space: nowrap;
+        }
+        .header-tagline.typing-header {
+        color: #ffcc70;
+        font-size: 1.3em;
+        font-weight: bold;
+        white-space: nowrap;
+        letter-spacing: normal;
+        background: rgba(34,40,49,0.7); /* subtle background */
+        border: 1.5px solid #ffcc70;
+        border-radius: 12px;
+        min-width: 500px;   /* or wider if needed */
+        min-height: 1.5em;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.2em 1em;
+        box-sizing: border-box;
+        margin: 0;
+        text-shadow: none;
+        }
+        
+        .global-top-buttons {
+            display: flex;
+            gap: 0.5em;
+        }
+        .header-center {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
 
-<!-- GLOBAL TOP BUTTONS (always visible, no section titles above) -->
-<div class="global-top-buttons">
-    <!-- Home -->
-    <a href="#" onclick="showSection('home')" class="nav-btn" title="Home">
-        <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
-            <rect width="48" height="48" rx="12" fill="#fff"/>
-            <path d="M8 24L24 10L40 24" stroke="#1976d2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <rect x="16" y="24" width="16" height="14" rx="2" fill="#90caf9" stroke="#1976d2" stroke-width="2"/>
-        </svg>
-    </a>
-    <!-- Projects (Folder Icon) -->
-    <a href="#" onclick="showSection('projects')" class="nav-btn" title="Projects">
-        <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
-            <rect width="48" height="48" rx="12" fill="#fff"/>
-            <rect x="8" y="18" width="32" height="16" rx="4" fill="#1976d2"/>
-            <rect x="8" y="14" width="20" height="8" rx="2" fill="#ffcc70"/>
-            <rect x="30" y="14" width="10" height="8" rx="2" fill="#90caf9"/>
-        </svg>
-    </a>
-    <!-- Images (Gallery Icon) -->
-    <a href="#" class="nav-btn" title="Project Images" onclick="showSection('project-images')">
-        <svg class="gallery-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48" fill="none">
-            <rect width="48" height="48" rx="12" fill="#fff"/>
-            <rect x="10" y="14" width="28" height="20" rx="4" fill="#1976d2"/>
-            <circle cx="18" cy="24" r="4" fill="#ffcc70"/>
-            <path d="M18 30l6-8 8 10" stroke="#90caf9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-    </a>
-    <!-- Blog -->
-    <a href="#" class="nav-btn" title="Read Blog" onclick="showSection('blog')">
-        <svg class="blog-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48" fill="none">
-            <rect width="48" height="48" rx="12" fill="#fff"/>
-            <rect x="10" y="14" width="28" height="20" rx="4" fill="#1976d2"/>
-            <rect x="14" y="18" width="20" height="12" rx="2" fill="#ffcc70"/>
-            <path d="M18 22h12M18 26h8" stroke="#1976d2" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-    </a>
-    <!-- Email -->
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jrdarbar1996@gmail.com" target="_blank" title="Email Jaydip Darbar" class="nav-btn">
-        <svg class="gmail-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48" fill="none">
-            <rect width="48" height="48" rx="12" fill="#fff"/>
-            <path d="M8 14v20a2 2 0 002 2h28a2 2 0 002-2V14l-16 12L8 14z" fill="#EA4335"/>
-            <path d="M8 14l16 12 16-12" stroke="#EA4335" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-    </a>
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/jaydip-darbar-bb1080344/" target="_blank" class="nav-btn" title="Connect on LinkedIn">
-        <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32" fill="none">
-            <rect width="32" height="32" rx="8" fill="#0A66C2"/>
-            <path d="M10.667 13.333H13.333V22H10.667V13.333ZM12 11.667C12.7364 11.667 13.3333 11.0701 13.3333 10.3337C13.3333 9.59732 12.7364 9.00033 12 9.00033C11.2636 9.00033 10.6667 9.59732 10.6667 10.3337C10.6667 11.0701 11.2636 11.667 12 11.667ZM14.667 13.333H17.333V14.6667H17.36C17.7333 13.96 18.6267 13.2267 19.8933 13.2267C22.2933 13.2267 22.6667 14.8133 22.6667 16.8133V22H20V17.3333C20 16.2267 19.7867 15.3333 18.6667 15.3333C17.5467 15.3333 17.3333 16.2267 17.3333 17.3333V22H14.6667V13.333Z" fill="white"/>
-        </svg>
-    </a>
-    <!-- About -->
-    <a href="#" onclick="showSection('about')" class="nav-btn" title="About">
-        <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
-            <rect width="48" height="48" rx="12" fill="#fff"/>
-            <circle cx="24" cy="20" r="6" fill="#1976d2"/>
-            <rect x="16" y="30" width="16" height="6" rx="3" fill="#90caf9"/>
-        </svg>
-    </a>
+<!-- Particle background for advanced 3D glossy effect -->
+<div class="particle-bg">
+  <div class="particle p1"></div>
+  <div class="particle p2"></div>
+  <div class="particle p3"></div>
+  <div class="particle p4"></div>
+  <div class="particle p5"></div>
+</div>
+
+<div class="hero-animated-bg">
+  <svg width="420" height="420" viewBox="0 0 420 420">
+    <g class="data-flow">
+      <polyline points="210,400 210,320 120,260 210,200 300,260 210,320" stroke="#00eaff" stroke-width="3" fill="none">
+        <animate attributeName="stroke-dashoffset" from="0" to="60" dur="2s" repeatCount="indefinite"/>
+      </polyline>
+      <polyline points="210,400 210,340 170,300 210,260 250,300 210,340" stroke="#ffcc70" stroke-width="2" fill="none" opacity="0.7">
+        <animate attributeName="stroke-dashoffset" from="0" to="40" dur="2.5s" repeatCount="indefinite"/>
+      </polyline>
+    </g>
+    <circle cx="210" cy="210" r="90" fill="none" stroke="#90caf9" stroke-width="2" opacity="0.3"/>
+    <circle cx="210" cy="210" r="120" fill="none" stroke="#00eaff" stroke-width="1.5" opacity="0.15"/>
+  </svg>
 </div>
 
 <header>
-    <nav>
-        <h1 class="logo">Jaydip Darbar</h1>
-        <ul>
-            <li><a href="#" onclick="showSection('home')">Home</a></li>
-            <li><a href="#" onclick="showSection('about')">About</a></li>
-            <li><a href="#" onclick="showSection('projects')">Projects</a></li>
-            <li><a href="#" onclick="showSection('blog')">Blog</a></li>
-        </ul>
+    <nav class="header-nav">
+        <div class="header-left">
+            <span class="header-tagline typing-header"> <span class="typing-header-text"></span> </span>
+        </div>
+        <div class="global-top-buttons">
+            <!-- Home -->
+            <a href="#" onclick="showSection('home')" class="nav-btn" title="Home">
+                <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
+                    <rect width="48" height="48" rx="12" fill="#fff"/>
+                    <path d="M8 24L24 10L40 24" stroke="#1976d2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="16" y="24" width="16" height="14" rx="2" fill="#90caf9" stroke="#1976d2" stroke-width="2"/>
+                </svg>
+            </a>
+            <!-- Projects -->
+            <a href="#" onclick="showSection('projects')" class="nav-btn" title="Projects">
+                <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
+                    <rect width="48" height="48" rx="12" fill="#fff"/>
+                    <rect x="8" y="18" width="32" height="16" rx="4" fill="#1976d2"/>
+                    <rect x="8" y="14" width="20" height="8" rx="2" fill="#ffcc70"/>
+                    <rect x="30" y="14" width="10" height="8" rx="2" fill="#90caf9"/>
+                </svg>
+            </a>
+            <!-- Images -->
+            <a href="#" class="nav-btn" title="Project Images" onclick="showSection('project-images')">
+                <svg class="gallery-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48" fill="none">
+                    <rect width="48" height="48" rx="12" fill="#fff"/>
+                    <rect x="10" y="14" width="28" height="20" rx="4" fill="#1976d2"/>
+                    <circle cx="18" cy="24" r="4" fill="#ffcc70"/>
+                    <path d="M18 30l6-8 8 10" stroke="#90caf9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <!-- Blog -->
+            <a href="#" class="nav-btn" title="Read Blog" onclick="showSection('blog')">
+                <svg class="blog-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48" fill="none">
+                    <rect width="48" height="48" rx="12" fill="#fff"/>
+                    <rect x="10" y="14" width="28" height="20" rx="4" fill="#1976d2"/>
+                    <rect x="14" y="18" width="20" height="12" rx="2" fill="#ffcc70"/>
+                    <path d="M18 22h12M18 26h8" stroke="#1976d2" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </a>
+            <!-- Email -->
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jrdarbar1996@gmail.com" target="_blank" title="Email Jaydip Darbar" class="nav-btn">
+                <svg class="gmail-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48" fill="none">
+                    <rect width="48" height="48" rx="12" fill="#fff"/>
+                    <path d="M8 14v20a2 2 0 002 2h28a2 2 0 002-2V14l-16 12L8 14z" fill="#EA4335"/>
+                    <path d="M8 14l16 12 16-12" stroke="#EA4335" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/jaydip-darbar-bb1080344/" target="_blank" class="nav-btn" title="Connect on LinkedIn">
+                <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32" fill="none">
+                    <rect width="32" height="32" rx="8" fill="#0A66C2"/>
+                    <path d="M10.667 13.333H13.333V22H10.667V13.333ZM12 11.667C12.7364 11.667 13.3333 11.0701 13.3333 10.3337C13.3333 9.59732 12.7364 9.00033 12 9.00033C11.2636 9.00033 10.6667 9.59732 10.6667 10.3337C10.6667 11.0701 11.2636 11.667 12 11.667ZM14.667 13.333H17.333V14.6667H17.36C17.7333 13.96 18.6267 13.2267 19.8933 13.2267C22.2933 13.2267 22.6667 14.8133 22.6667 16.8133V22H20V17.3333C20 16.2267 19.7867 15.3333 18.6667 15.3333C17.5467 15.3333 17.3333 16.2267 17.3333 17.3333V22H14.6667V13.333Z" fill="white"/>
+                </svg>
+            </a>
+            <!-- Download -->
+            <a href="#" onclick="showSection('download-section')" class="nav-btn" title="Download Section">
+                <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
+                    <rect width="48" height="48" rx="12" fill="#fff"/>
+                    <path d="M24 10v18m0 0l-7-7m7 7l7-7" stroke="#1976d2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="12" y="34" width="24" height="4" rx="2" fill="#90caf9"/>
+                </svg>
+            </a>
+            <!-- About -->
+            <a href="#" onclick="showSection('about')" class="nav-btn" title="About">
+                <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
+                    <rect width="48" height="48" rx="12" fill="#fff"/>
+                    <circle cx="24" cy="20" r="6" fill="#1976d2"/>
+                    <rect x="16" y="30" width="16" height="6" rx="3" fill="#90caf9"/>
+                </svg>
+            </a>
+        </div>
     </nav>
+    <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="mobile-drawer" id="mobile-drawer">
+      <button class="close-drawer" id="close-drawer" aria-label="Close menu">&times;</button>
+      <a href="#" onclick="showSection('home'); closeDrawer();" class="drawer-link">Home</a>
+      <a href="#" onclick="showSection('projects'); closeDrawer();" class="drawer-link">Projects</a>
+      <a href="#" onclick="showSection('project-images'); closeDrawer();" class="drawer-link">Images</a>
+      <a href="#" onclick="showSection('blog'); closeDrawer();" class="drawer-link">Blog</a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jrdarbar1996@gmail.com" target="_blank" class="drawer-link">Email</a>
+      <a href="https://www.linkedin.com/in/jaydip-darbar-bb1080344/" target="_blank" class="drawer-link">LinkedIn</a>
+      <a href="#" onclick="showSection('download-section'); closeDrawer();" class="drawer-link">Download</a>
+      <a href="#" onclick="showSection('about'); closeDrawer();" class="drawer-link">About</a>
+    </div>
 </header>
 
 <!-- HERO SECTION -->
@@ -96,10 +185,19 @@
             </p>
 
             <!-- Quick Stats -->
-            <div class="stats">
-                <div class="stat"><span>10+</span> Years Experience</div>
-                <div class="stat"><span>50+</span> Projects Delivered</div>
-                <div class="stat"><span>25+</span> Industries Served</div>
+            <div class="stats-3d">
+                <div class="stat-3d" id="stat-years">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label"> Years<br>Experience</span>
+                </div>
+                <div class="stat-3d" id="stat-projects">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label"> Projects<br>Delivered</span>
+                </div>
+                <div class="stat-3d" id="stat-industries">
+                    <span class="stat-number">25+</span>
+                    <span class="stat-label"> Industries<br>Served</span>
+                </div>
             </div>
         </div>
 
@@ -461,6 +559,30 @@
     </div>
 </div>
 
+
+<!-- Replace your download links in the download section like this: -->
+<section id="download-section" class="download-section hidden">
+    <h2>📥 Download Center</h2>
+    <div class="download-list">
+        <div class="download-item">
+            <span>Jaydip Darbar Sr. Project Engineer (PDF)</span>
+            <a href="Jaydip Darbar Sr.Project Engineer.pdf" target="_blank" class="download-link">View</a>
+        </div>
+        <div class="download-item">
+            <span>IIOT Project Details (PDF)</span>
+            <a href="IIOT project details.pdf" target="_blank" class="download-link">View</a>
+        </div>
+        <div class="download-item">
+            <span>Industry 4.0 IIoT Deep Learning Guide (PDF)</span>
+            <a href="Industry 4.0 IIoT Deep Learning Guide.pdf" target="_blank" class="download-link">View</a>
+        </div>
+        <div class="download-item">
+            <span>Jaydip Darbar Cover Letter (PDF)</span>
+            <a href="Jaydip Darbar Cover Letter.pdf" target="_blank" class="download-link">View</a>
+        </div>
+    </div>
+</section>
+
 <!-- PROJECT IMAGES SECTION -->
 <section id="project-images" class="project-images-section hidden">
     <h2>Project Screenshots</h2>
@@ -559,6 +681,38 @@
         }
     }
     typeEffect();
+
+    // FIX: Tagline animation must run after DOM is loaded!
+    document.addEventListener('DOMContentLoaded', function() {
+        const taglineArray = [
+            "🚀 Empowering Smart Factories ⚙️",
+            "🌐 Connecting Industry 4.0 🔗",
+            "💡 Driving Industrial Innovation 🛠️",
+            "🧠 Engineering Intelligent Solutions 🤖",
+            "⚡ Powering the Next Industrial Revolution 🏭",
+            "📊 Transforming Data into Productivity 📈"
+        ];
+        let taglineIndex = 0, taglineChar = 0, taglineDeleting = false;
+        const taglineElem = document.querySelector('.header-tagline.typing-header');
+        function typeTagline() {
+            if (!taglineElem) return;
+            const txt = taglineArray[taglineIndex];
+            // Use non-breaking space if text is empty
+            taglineElem.textContent = txt.substring(0, taglineChar) || "\u00A0";
+            if (!taglineDeleting && taglineChar < txt.length) {
+                taglineChar++;
+                setTimeout(typeTagline, 90);
+            } else if (taglineDeleting && taglineChar > 0) {
+                taglineChar--;
+                setTimeout(typeTagline, 40);
+            } else {
+                taglineDeleting = !taglineDeleting;
+                if (!taglineDeleting) taglineIndex = (taglineIndex + 1) % taglineArray.length;
+                setTimeout(typeTagline, 900);
+            }
+        }
+        typeTagline();
+    });
 
     // Show project details when a card is clicked
     function showProjectDetail(num) {
@@ -733,6 +887,61 @@ function closeBlogModal() {
 document.getElementById('blog-modal').onclick = function(e) {
     if (e.target === this) closeBlogModal();
 }
+
+// Animated Counters
+function animateCounters() {
+    document.querySelectorAll('.counter').forEach(counter => {
+        const target = +counter.getAttribute('data-count');
+        let count = 0;
+        const step = Math.ceil(target / 40);
+        function update() {
+            count += step;
+            if (count >= target) {
+                counter.textContent = target;
+            } else {
+                counter.textContent = count;
+                requestAnimationFrame(update);
+            }
+        }
+        update();
+    });
+}
+window.addEventListener('DOMContentLoaded', animateCounters);
+
+// Dark/Light Mode Toggle
+function toggleTheme() {
+    document.body.classList.toggle('light-theme');
+    localStorage.setItem('theme', document.body.classList.contains('light-theme') ? 'light' : 'dark');
+}
+(function() {
+    if (localStorage.getItem('theme') === 'light') {
+        document.body.classList.add('light-theme');
+    }
+})();
+
+// Hero Image Glow/Pulse
+document.addEventListener('DOMContentLoaded', function() {
+    const img = document.querySelector('.main-image');
+    if (img) img.classList.add('glow-pulse');
+});
+
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const mobileDrawer = document.getElementById('mobile-drawer');
+const closeDrawerBtn = document.getElementById('close-drawer');
+
+function openDrawer() {
+  mobileDrawer.classList.add('open');
+}
+function closeDrawer() {
+  mobileDrawer.classList.remove('open');
+}
+hamburgerBtn.onclick = openDrawer;
+closeDrawerBtn.onclick = closeDrawer;
+// Optional: close drawer when clicking outside
+mobileDrawer.addEventListener('click', function(e) {
+  if (e.target === mobileDrawer) closeDrawer();
+});
+
 </script>
 
 </body>
