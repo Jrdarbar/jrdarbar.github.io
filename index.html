@@ -62,6 +62,36 @@
   <div class="particle p3"></div>
   <div class="particle p4"></div>
   <div class="particle p5"></div>
+  <!-- IIoT/Industry 4.0 floating SVG symbols -->
+  <svg class="floating-symbol symbol-robot" width="48" height="48" viewBox="0 0 48 48" fill="none">
+    <rect x="14" y="18" width="20" height="12" rx="6" fill="#00eaff" opacity="0.7"/>
+    <rect x="20" y="12" width="8" height="8" rx="4" fill="#ffcc70" opacity="0.8"/>
+    <rect x="18" y="32" width="12" height="4" rx="2" fill="#90caf9" opacity="0.7"/>
+  </svg>
+  <svg class="floating-symbol symbol-factory" width="48" height="48" viewBox="0 0 48 48" fill="none">
+    <rect x="8" y="24" width="32" height="12" rx="4" fill="#1976d2" opacity="0.7"/>
+    <rect x="12" y="18" width="8" height="6" rx="2" fill="#ffcc70" opacity="0.8"/>
+    <rect x="28" y="14" width="8" height="10" rx="2" fill="#90caf9" opacity="0.7"/>
+    <rect x="20" y="10" width="8" height="8" rx="2" fill="#00eaff" opacity="0.6"/>
+  </svg>
+  <svg class="floating-symbol symbol-cloud" width="48" height="48" viewBox="0 0 48 48" fill="none">
+    <ellipse cx="24" cy="30" rx="14" ry="8" fill="#90caf9" opacity="0.7"/>
+    <ellipse cx="18" cy="28" rx="6" ry="4" fill="#00eaff" opacity="0.6"/>
+    <ellipse cx="30" cy="32" rx="8" ry="5" fill="#ffcc70" opacity="0.5"/>
+  </svg>
+  <svg class="floating-symbol symbol-chip" width="48" height="48" viewBox="0 0 48 48" fill="none">
+    <rect x="14" y="14" width="20" height="20" rx="6" fill="#1976d2" opacity="0.7"/>
+    <rect x="20" y="20" width="8" height="8" rx="2" fill="#ffcc70" opacity="0.8"/>
+    <rect x="10" y="10" width="4" height="4" rx="1" fill="#00eaff" opacity="0.7"/>
+    <rect x="34" y="34" width="4" height="4" rx="1" fill="#90caf9" opacity="0.7"/>
+  </svg>
+  <svg class="floating-symbol symbol-network" width="48" height="48" viewBox="0 0 48 48" fill="none">
+    <circle cx="24" cy="24" r="8" fill="#00eaff" opacity="0.7"/>
+    <circle cx="10" cy="24" r="4" fill="#ffcc70" opacity="0.7"/>
+    <circle cx="38" cy="24" r="4" fill="#90caf9" opacity="0.7"/>
+    <line x1="14" y1="24" x2="20" y2="24" stroke="#00eaff" stroke-width="2" opacity="0.7"/>
+    <line x1="28" y1="24" x2="34" y2="24" stroke="#00eaff" stroke-width="2" opacity="0.7"/>
+  </svg>
 </div>
 
 <div class="hero-animated-bg">
@@ -152,6 +182,10 @@
                 </svg>
             </a>
         </div>
+        <!-- Move this div OUTSIDE of .global-top-buttons, but still inside .header-nav -->
+        <div style="font-size:1.1em;color:#ffcc70;font-weight:bold;letter-spacing:1px;margin-top:1.8em;margin-left:0.5em;">
+            Industrial Automation-IIoT-Industry 4.0
+        </div>
     </nav>
     <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
       <span></span>
@@ -199,6 +233,20 @@
                     <span class="stat-label"> Industries<br>Served</span>
                 </div>
             </div>
+
+            <!-- Skills Bar: Only in Hero Section -->
+            <div class="skills-bar">
+              <span class="skills-title"></span>
+              <img src="factory.png" alt="Factory" class="skills-icon">
+              <img src="industry-40.png" alt="industry-40" class="skills-icon">
+              <img src="delivery.png" alt="Delivery" class="skills-icon">
+              <img src="infrastructure.png" alt="Infrastructure" class="skills-icon">
+              <img src="data-processing.png" alt="Data Processing" class="skills-icon">
+              <img src="technical-support.png" alt="Technical Support" class="skills-icon">
+              <img src="artificial-intelligence.png" alt="AI" class="skills-icon">
+              <img src="chatbot.png" alt="Chatbot" class="skills-icon">
+              <img src="automation.png" alt="Automation" class="skills-icon">
+            </div>
         </div>
 
         <!-- RIGHT IMAGE -->
@@ -208,81 +256,142 @@
     </div>
 </section>
 
-<!-- Vertical Skills Bar -->
-<div class="skills-bar">
-  <span class="skills-title"></span>
-  <img src="factory.png" alt="Factory" class="skills-icon">
-  <img src="industry-40.png" alt="industry-40" class="skills-icon">
-  <img src="delivery.png" alt="Delivery" class="skills-icon">
-  <img src="infrastructure.png" alt="Infrastructure" class="skills-icon">
-  <img src="data-processing.png" alt="Data Processing" class="skills-icon">
-  <img src="technical-support.png" alt="Technical Support" class="skills-icon">
-  <img src="artificial-intelligence.png" alt="AI" class="skills-icon">
-  <img src="chatbot.png" alt="Chatbot" class="skills-icon">
-  <img src="automation.png" alt="Automation" class="skills-icon">
-</div>
-
 <!-- ABOUT SECTION -->
 <section id="about" class="about-section projects hidden">
-    <div class="about-card">
-        <div class="about-header">
-            <span class="about-avatar">👨‍💻</span>
-            <h2>Jaydip Darbar</h2>
-            <p class="about-title">💼 Sr. Project Engineer | Industrial Automation & IIoT | 10+ Years Experience 💼</p>
-            <a href="https://www.linkedin.com/in/jaydip-darbar-bb1080344/" target="_blank" class="linkedin-link" title="Connect on LinkedIn">
-                <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                    <rect width="32" height="32" rx="8" fill="#0A66C2"/>
-                    <path d="M10.667 13.333H13.333V22H10.667V13.333ZM12 11.667C12.7364 11.667 13.3333 11.0701 13.3333 10.3337C13.3333 9.59732 12.7364 9.00033 12 9.00033C11.2636 9.00033 10.6667 9.59732 10.6667 10.3337C10.6667 11.0701 11.2636 11.667 12 11.667ZM14.667 13.333H17.333V14.6667H17.36C17.7333 13.96 18.6267 13.2267 19.8933 13.2267C22.2933 13.2267 22.6667 14.8133 22.6667 16.8133V22H20V17.3333C20 16.2267 19.7867 15.3333 18.6667 15.3333C17.5467 15.3333 17.3333 16.2267 17.3333 17.3333V22H14.6667V13.333Z" fill="white"/>
-                </svg>
-            </a>
-        </div>
-        <div class="about-body">
-            <p>
-                <span class="about-emoji">🚀</span>
-                <b>Profile:</b><br>
-                Dynamic and results-driven Senior Project Engineer with over 9 years of experience in Industrial Automation and IIoT integration. Specialized in Rockwell Automation platforms and modern industrial communication systems. Deep expertise in designing, implementing, and optimizing control systems, data acquisition, and smart manufacturing solutions.
-            </p>
-            <p>
-                <span class="about-emoji">🛠️</span>
-                <b>Core Automation Expertise:</b><br>
-                Rockwell Automation: PlantPAx DCS, ControlLogix, CompactLogix, FactoryTalk View SE/ME, FT Historian<br>
-                Redundant control system design, SCADA distribution with system failover<br>
-                Protocols: Modbus TCP/RTU, OPC DA/UA, Ethernet/IP integration<br>
-                SQL Database & Reporting: Historian to SQL, data visualization using Grafana, reports in Visual Studio
-            </p>
-            <hr>
-            <p>
-                <span class="about-emoji">🌐</span>
-                <b>Recent IIoT-Driven Projects:</b><br>
-                ✅ Edge-to-Cloud Integration using Kepware, MQTT, Node-RED to push data to enterprise dashboards<br>
-                ✅ Configured HiveMQ and Kafka brokers for scalable data streaming across industrial sites<br>
-                ✅ Built custom alerts via SMTP (Email) and SMS notifications for real-time production events<br>
-                ✅ Developed lightweight Grafana dashboards for machine OEE, downtime, and energy analytics<br>
-                ✅ Connected legacy PLCs to IIoT platforms using OPC UA and KepServerEX, enabling remote access<br>
-                ✅ Implemented cybersecurity policies and VLAN segmentation using Stratix 5950 switches and firewalls
-            </p>
-            <hr>
-            <p>
-                <span class="about-emoji">🌟</span>
-                <b>Key Project Highlights:</b><br>
-                Spearheaded automation solutions for pharmaceuticals, glass manufacturing, and dairy processing industries<br>
-                Led end-to-end FAT, SAT, and commissioning for projects in India, Sri Lanka<br>
-                Architected plant-wide OT networks using Layer 2/3 switches, NAT configuration, and secure remote access<br>
-                Delivered training and documentation for IT/OT handover to customer support teams
-            </p>
-            <hr>
-            <p>
-                <span class="about-emoji">📈</span>
-                <b>Looking Ahead:</b><br>
-                Focused on enabling smart factory transformations through scalable IIoT frameworks, cloud-ready data pipelines, and enhanced operational intelligence.
-            </p>
-            <p>
-                <span class="about-emoji">📬</span>
-                <b>Let’s Connect:</b><br>
-                For collaboration, consulting, or training, email <a href="mailto:jrdarbar1996@gmail.com">jrdarbar1996@gmail.com</a>
-            </p>
-        </div>
+  <div class="about-grid">
+    <div class="about-card" style="grid-column: 1 / span 3;">
+      <div class="about-header">
+        <span class="about-avatar">👨‍💻</span>
+        <h2 class="author-name">Jaydip Darbar</h2>
+        <p class="about-title">Sr. Project Engineer | Industrial Automation & IIoT</p>
+      </div>
+      <div class="about-body">
+        <p><span class="about-emoji">🌟</span> <b>About</b></p>
+        <ul>
+          <li>I am a Dynamic and Results-Driven Senior Project Engineer with over a decade of experience (10+ years) in the field of Industrial Automation, Process Control Systems, and IIoT-driven Smart Manufacturing.</li>
+          <li>Played a pivotal role in designing, implementing, and commissioning automation and digitalization projects across pharmaceutical, glass, dairy, and process manufacturing.</li>
+          <li>Passionate about technology-driven transformation — enabling industries to move toward Industry 4.0, Smart Factories, and Digital Manufacturing ecosystems.</li>
+          <li>Specialize in solutions that automate processes and create actionable insights, operational efficiency, and business intelligence through advanced connectivity and data integration.</li>
+        </ul>
+        <p><span class="about-emoji">🛠️</span> <b>Core Automation Expertise</b></p>
+        <ul>
+          <li><b>Rockwell Automation Systems:</b>
+            <ul>
+              <li>PlantPAx Distributed Control System (DCS)</li>
+              <li>ControlLogix & CompactLogix PLCs</li>
+              <li>FactoryTalk View SE/ME (SCADA, HMI systems)</li>
+              <li>FactoryTalk Historian for centralized data management</li>
+              <li>End-to-end redundant system design for maximum availability</li>
+              <li>Distributed SCADA architectures with seamless failover handling</li>
+            </ul>
+          </li>
+          <li><b>Communication Protocols:</b>
+            <ul>
+              <li>Expertise in Ethernet/IP, Modbus TCP/RTU, OPC DA/UA</li>
+              <li>Integration of legacy and modern PLC/DCS systems into a single connected ecosystem</li>
+              <li>Designing interoperable communication bridges for vendor-agnostic systems</li>
+            </ul>
+          </li>
+          <li><b>SQL Database & Reporting:</b>
+            <ul>
+              <li>Real-time data transfer from Historian to SQL Databases</li>
+              <li>Advanced analytics and reporting using Grafana, Power BI, and Visual Studio</li>
+              <li>Automated dashboards for OEE (Overall Equipment Effectiveness), downtime analysis, and performance monitoring</li>
+            </ul>
+          </li>
+        </ul>
+        <p><span class="about-emoji">🌐</span> <b>IIoT & Digital Transformation</b></p>
+        <ul>
+          <li>Specialize in architecting IIoT-driven frameworks that connect shop-floor devices to enterprise systems and cloud environments.</li>
+          <li><b>Edge-to-Cloud Data Integration:</b>
+            <ul>
+              <li>Hands-on expertise with Kepware, MQTT, Node-RED for secure real-time connectivity</li>
+              <li>Designing HiveMQ & Kafka-based data streaming pipelines for high-volume industrial data</li>
+              <li>Edge analytics for near real-time decision-making</li>
+            </ul>
+          </li>
+          <li><b>Smart Dashboards & Analytics:</b>
+            <ul>
+              <li>Customized Grafana dashboards for OEE, energy monitoring, predictive maintenance, and downtime analysis</li>
+              <li>Role-based dashboards tailored for operators, managers, and executives</li>
+            </ul>
+          </li>
+          <li><b>Intelligent Notifications & Alarms:</b>
+            <ul>
+              <li>Designed automated Email (SMTP) and SMS-based notifications for production issues, downtime alerts, and safety conditions</li>
+              <li>Integration of alerts with mobile and enterprise platforms</li>
+            </ul>
+          </li>
+          <li><b>Legacy Modernization:</b>
+            <ul>
+              <li>Migrated older PLC/DCS systems into IIoT-ready infrastructures using OPC UA and KepServerEX</li>
+              <li>Improved system visibility and lifecycle management without costly hardware replacement</li>
+            </ul>
+          </li>
+          <li><b>Cybersecurity & Networking:</b>
+            <ul>
+              <li>Implemented VLAN segmentation, OT firewalls, NAT routing, and secure remote access systems</li>
+              <li>Adhered to ISA/IEC 62443 security frameworks to protect industrial assets from cyber threats</li>
+            </ul>
+          </li>
+        </ul>
+        <p><span class="about-emoji">🌟</span> <b>Key Project Highlights & Leadership Achievements</b></p>
+        <ul>
+          <li><b>Pharmaceutical Industry:</b>
+            <ul>
+              <li>Designed and deployed validated automation and historian solutions that complied with GxP and FDA 21 CFR Part 11 requirements</li>
+              <li>Enabled complete process traceability, audit trails, and batch reporting for compliance</li>
+            </ul>
+          </li>
+          <li><b>Glass Manufacturing:</b>
+            <ul>
+              <li>Implemented high-availability SCADA with redundant servers and historian integration</li>
+              <li>Delivered advanced production insights, energy monitoring, and downtime tracking</li>
+            </ul>
+          </li>
+          <li><b>Dairy and Food Processing:</b>
+            <ul>
+              <li>Designed IIoT dashboards for OEE improvements and predictive maintenance</li>
+              <li>Reduced downtime through real-time SMS/email alerts and proactive maintenance planning</li>
+            </ul>
+          </li>
+          <li><b>Commissioning & Execution:</b>
+            <ul>
+              <li>Led Factory Acceptance Tests (FAT), Site Acceptance Tests (SAT), and commissioning projects in India and Sri Lanka</li>
+              <li>Managed cross-disciplinary teams to ensure on-time, within-budget project delivery</li>
+            </ul>
+          </li>
+          <li><b>Network Architecture:</b>
+            <ul>
+              <li>Designed Layer 2/3 OT networks, integrated VLANs, and configured secure NAT and VPN access for remote troubleshooting</li>
+              <li>Created resilient and cyber-secure industrial networks that supported both legacy and modern devices</li>
+            </ul>
+          </li>
+          <li><b>Training & Documentation:</b>
+            <ul>
+              <li>Conducted knowledge transfer workshops, developed Standard Operating Procedures (SOPs), and trained IT/OT teams for post-project sustainability</li>
+            </ul>
+          </li>
+        </ul>
+        <p><span class="about-emoji">📈</span> <b>Looking Ahead</b></p>
+        <ul>
+          <li>Designing scalable IIoT frameworks for enterprises of all sizes</li>
+          <li>Building cloud-ready data pipelines that support AI/ML-driven analytics</li>
+          <li>Enhancing predictive maintenance and operational intelligence through real-time data insights</li>
+          <li>Enabling secure IT-OT convergence with robust cybersecurity and compliance frameworks</li>
+          <li>Supporting industries in their journey toward digital twins and smart factories</li>
+        </ul>
+        <p><span class="about-emoji">📬</span> <b>Let’s Connect</b></p>
+        <ul>
+          <li>I work on Industrial Automation, IIoT, Smart Manufacturing, and OT-IT integration projects — from control system design and commissioning to data pipelines, dashboards, and secure network architectures.
+
+If you are working on automation, IIoT, or digital transformation projects and would like to connect, feel free to reach me at:</li>
+          <li>📧 Email: <a href="mailto:jrdarbar1996@gmail.com">jrdarbar1996@gmail.com</a></li>
+          <li>🤝 Let’s discuss how we can drive automation, digital transformation, and operational excellence together.</li>
+        </ul>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- PROJECTS SECTION -->
@@ -594,6 +703,11 @@
             <span>Jaydip Darbar Cover Letter (PDF)</span>
             <a href="Jaydip Darbar Cover Letter.pdf" target="_blank" class="download-link">View</a>
         </div>
+        <!-- Added IIOT Layered Architecture PDF -->
+        <div class="download-item">
+            <span>IIOT Layered Architecture (PDF)</span>
+            <a href="IIOT Layered Architecture.pdf" target="_blank" class="download-link">View</a>
+        </div>
     </div>
 </section>
 
@@ -645,6 +759,18 @@
         <!-- Blog Card 3 -->
         <div class="blog-card-mini" onclick="openBlogModal(3)">
             <h3>🌐 The Rise of IIoT – How Automation Engineers Can Stay Ahead</h3>
+        </div>
+        <!-- New Blog Card 4 -->
+        <div class="blog-card-mini" onclick="openBlogModal(4)">
+            <h3>📝 The Rise of Smart Factories: IIoT and the Future of Industrial Automation</h3>
+        </div>
+        <!-- New Blog Card 5 -->
+        <div class="blog-card-mini" onclick="openBlogModal(5)">
+            <h3>📝 AI & Machine Learning in Industrial Automation: Unlocking Hidden Potential</h3>
+        </div>
+        <!-- New Blog Card 6 -->
+        <div class="blog-card-mini" onclick="openBlogModal(6)">
+            <h3>📝 Industry 4.0 and IIoT: Building the Connected Future of Manufacturing</h3>
         </div>
     </div>
 </section>
@@ -898,6 +1024,116 @@ A food processing plant integrated IIoT sensors on their conveyor belts to monit
 IIoT isn’t replacing automation engineers — it’s empowering them. By learning the new tools and languages of connected industry, you’ll be more than a control system expert — you’ll be a key driver of digital transformation.
 </li>
 </ul>
+`,
+// New Blog 4
+`<h2>📝 The Rise of Smart Factories: IIoT and the Future of Industrial Automation</h2>
+<p><b>Introduction</b></p>
+<p>For decades, industrial automation has focused on efficiency and consistency. Today, it is evolving into something much bigger: Smart Factories powered by the Industrial Internet of Things (IIoT). These next-generation plants combine sensors, connectivity, and data analytics to deliver real-time intelligence that transforms how industries operate.</p>
+<p><b>What Makes a Factory “Smart”?</b></p>
+<ul>
+<li><b>Connected:</b> Machines, sensors, and controllers continuously share data</li>
+<li><b>Data-Driven:</b> Information is captured, stored, and analyzed in real-time</li>
+<li><b>Adaptive:</b> Systems respond to changing conditions automatically</li>
+<li><b>Scalable:</b> Ready for future upgrades without major redesigns</li>
+</ul>
+<p><b>IIoT as the Backbone</b></p>
+<ul>
+<li>The Industrial Internet of Things (IIoT) connects machines and systems using modern protocols like MQTT, OPC UA, and Ethernet/IP. With this connectivity, data can flow from shop-floor PLCs to enterprise dashboards and even to the cloud for deeper analysis.</li>
+<li><b>Edge Computing:</b> Decisions made close to the machine, reducing latency</li>
+<li><b>Cloud Integration:</b> Enterprise-wide visibility and big data analytics</li>
+<li><b>Cybersecurity:</b> VLAN segmentation and secure gateways protect networks</li>
+</ul>
+<p><b>Benefits of Smart Factories</b></p>
+<ul>
+<li>Reduced downtime with predictive maintenance</li>
+<li>Improved OEE (Overall Equipment Effectiveness) through real-time monitoring</li>
+<li>Higher product quality with automated traceability</li>
+<li>Cost savings from energy optimization</li>
+</ul>
+<p><b>Conclusion</b></p>
+<p>Smart Factories represent the next chapter of industrial automation. By adopting IIoT-driven strategies, industries gain flexibility, intelligence, and resilience to remain competitive in the Industry 4.0 era.</p>
+`,
+// New Blog 5
+`<h2>📝 AI & Machine Learning in Industrial Automation: Unlocking Hidden Potential</h2>
+<p><b>Introduction</b></p>
+<p>Industrial automation has always been about controlling processes. But with the introduction of Artificial Intelligence (AI) and Machine Learning (ML), automation is moving beyond control — into prediction, optimization, and autonomous decision-making.</p>
+<p><b>Why AI/ML in Automation?</b></p>
+<ul>
+<li>Factories generate massive volumes of data through sensors, historians, and SCADA systems. Traditional logic can’t process patterns in this data, but AI/ML can.</li>
+<li><b>AI:</b> Helps systems simulate human-like decision-making</li>
+<li><b>ML:</b> Learns from historical data to improve future performance</li>
+</ul>
+<p><b>Practical Applications</b></p>
+<ul>
+<li><b>Predictive Maintenance</b>
+    <ul>
+        <li>Sensors monitor vibration, temperature, and pressure</li>
+        <li>ML models detect early signs of wear before failure happens</li>
+    </ul>
+</li>
+<li><b>Process Optimization</b>
+    <ul>
+        <li>AI fine-tunes parameters like speed or temperature</li>
+        <li>Ensures maximum efficiency without human intervention</li>
+    </ul>
+</li>
+<li><b>Quality Control with Vision Systems</b>
+    <ul>
+        <li>AI-based cameras detect defects instantly</li>
+        <li>Eliminates reliance on manual inspections</li>
+    </ul>
+</li>
+<li><b>Energy Efficiency</b>
+    <ul>
+        <li>AI optimizes machine usage and reduces unnecessary power consumption</li>
+    </ul>
+</li>
+</ul>
+<p><b>Technology Enablers</b></p>
+<ul>
+<li>Digital Twins for virtual testing of scenarios</li>
+<li>Edge AI for low-latency decisions at the machine level</li>
+<li>Cloud AI for large-scale model training and analytics</li>
+</ul>
+<p><b>Conclusion</b></p>
+<p>AI and ML are helping factories shift from reactive to proactive operations. Instead of fixing problems after they occur, industries can now predict, prevent, and continuously improve — unlocking the full potential of automation.</p>
+`,
+// New Blog 6
+`<h2>📝 Industry 4.0 and IIoT: Building the Connected Future of Manufacturing</h2>
+<p><b>Introduction</b></p>
+<p>The fourth industrial revolution (Industry 4.0) is reshaping how manufacturing works. At its heart lies the Industrial Internet of Things (IIoT) — a framework that enables machines, people, and systems to be fully connected.</p>
+<p><b>What is Industry 4.0?</b></p>
+<ul>
+<li>Industry 4.0 is not just about automation. It integrates:</li>
+<ul>
+    <li>Connectivity (IIoT devices and protocols)</li>
+    <li>Big Data & Analytics (real-time insights)</li>
+    <li>AI & ML (smart decision-making)</li>
+    <li>Cybersecurity (safe IT/OT convergence)</li>
+</ul>
+</ul>
+<p><b>IIoT in Action</b></p>
+<ul>
+<li><b>Pharma:</b> Real-time batch monitoring, audit trails for compliance</li>
+<li><b>Glass:</b> Predictive maintenance of furnaces, energy monitoring</li>
+<li><b>Dairy:</b> OEE dashboards, downtime tracking, and remote monitoring</li>
+<li><b>Automotive:</b> AI-driven robotics for assembly and defect detection</li>
+</ul>
+<p><b>Benefits of Industry 4.0</b></p>
+<ul>
+<li>Agility: Faster response to market changes</li>
+<li>Efficiency: Data-driven optimization of processes</li>
+<li>Quality: Automated traceability and compliance assurance</li>
+<li>Innovation: Digital twins and simulation-driven designs</li>
+</ul>
+<p><b>Challenges to Consider</b></p>
+<ul>
+<li>Integration of legacy PLCs into modern IIoT systems</li>
+<li>Workforce upskilling for digital tools</li>
+<li>Strong cybersecurity to protect OT networks</li>
+</ul>
+<p><b>Conclusion</b></p>
+<p>Industry 4.0 is not a distant dream — it is already transforming plants worldwide. By adopting IIoT, AI, and advanced analytics, manufacturers can evolve from automated factories to intelligent, self-optimizing ecosystems.</p>
 `
 ];
 
@@ -972,4 +1208,3 @@ mobileDrawer.addEventListener('click', function(e) {
 </body>
 
 </html>
-
