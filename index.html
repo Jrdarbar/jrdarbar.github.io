@@ -141,6 +141,22 @@
                     <path d="M18 30l6-8 8 10" stroke="#90caf9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </a>
+            <!-- Live Demo Projects -->
+            <a href="#" onclick="showSection('live-demo-projects')" class="nav-btn" title="Live Demo Projects">
+                <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
+                    <rect width="48" height="48" rx="12" fill="#fff"/>
+                    <circle cx="24" cy="24" r="10" fill="#00eaff"/>
+                    <rect x="20" y="14" width="8" height="20" rx="4" fill="#ffcc70"/>
+                </svg>
+            </a>
+            <!-- Case Studies -->
+            <a href="#" onclick="showSection('case-studies-section')" class="nav-btn" title="Case Studies">
+                <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
+                    <rect width="48" height="48" rx="12" fill="#fff"/>
+                    <rect x="12" y="12" width="24" height="24" rx="6" fill="#1976d2"/>
+                    <rect x="18" y="18" width="12" height="12" rx="3" fill="#ffcc70"/>
+                </svg>
+            </a>
             <!-- Blog -->
             <a href="#" class="nav-btn" title="Read Blog" onclick="showSection('blog')">
                 <svg class="blog-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48" fill="none">
@@ -184,7 +200,7 @@
         </div>
         <!-- Move this div OUTSIDE of .global-top-buttons, but still inside .header-nav -->
         <div style="font-size:1.1em;color:#ffcc70;font-weight:bold;letter-spacing:1px;margin-top:1.8em;margin-left:0.5em;">
-            Industrial Automation-IIoT-Industry 4.0
+            Industrial Automation – IIoT – Industry 4.0 – Future
         </div>
     </nav>
     <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
@@ -435,7 +451,7 @@ If you are working on automation, IIoT, or digital transformation projects and w
                 <rect x="12" y="28" width="24" height="12" rx="6" fill="#1976d2"/>
                 <rect x="20" y="32" width="8" height="8" rx="4" fill="#1565c0"/>
             </svg>
-            <h3>Python-Based 21 CFR Part 11 User Management</h3>
+            <h3>Python-Based 21 CFR 11 User Management</h3>
             <p>PySide6 app with RBAC, audit trails, and SCADA tag integration for regulated industries.</p>
         </div>
         <div class="project-card">
@@ -683,7 +699,211 @@ If you are working on automation, IIoT, or digital transformation projects and w
 </div>
 
 
-<!-- Replace your download links in the download section like this: -->
+<!-- CASE STUDIES SECTION -->
+<section id="case-studies-section" class="case-studies-section hidden">
+    <h2>📚 Project Case Studies</h2>
+    <div class="case-studies-list">
+        <!-- 1 -->
+        <div class="case-study-card">
+            <h3>Cloud-Connected PLC Data Pipeline</h3>
+            <ul>
+                <li><b>Problem:</b>
+                    <ul>
+                        <li>No real-time visibility of plant data</li>
+                        <li>Operators blind to remote production issues</li>
+                        <li>Delayed decision-making due to batch-based reporting</li>
+                    </ul>
+                </li>
+                <li><b>Solution:</b>
+                    <ul>
+                        <li>Node-RED gateway for collecting PLC data</li>
+                        <li>Streaming via MQTT → Cloud</li>
+                        <li>Historical logging in SQL Server</li>
+                        <li>Interactive live dashboards for operators</li>
+                    </ul>
+                </li>
+                <li><b>Results:</b>
+                    <ul>
+                        <li>24/7 remote access to plant data</li>
+                        <li>Improved uptime and proactive troubleshooting</li>
+                        <li>Faster decision-making → reduced downtime</li>
+                    </ul>
+                </li>
+                <li><b>Tech Stack:</b> Node-RED, MQTT, SQL Server</li>
+            </ul>
+        </div>
+        <!-- 2 -->
+        <div class="case-study-card">
+            <h3>High-Speed Kafka Streaming for Smart Factory</h3>
+            <ul>
+                <li><b>Problem:</b>
+                    <ul>
+                        <li>High-frequency machine data overwhelmed traditional databases</li>
+                        <li>Data loss during heavy loads</li>
+                        <li>Lack of real-time anomaly detection</li>
+                    </ul>
+                </li>
+                <li><b>Solution:</b>
+                    <ul>
+                        <li>Apache Kafka for distributed streaming</li>
+                        <li>Partitioned topics for scalability</li>
+                        <li>AI/ML models consuming Kafka topics for predictive maintenance</li>
+                    </ul>
+                </li>
+                <li><b>Results:</b>
+                    <ul>
+                        <li>Handled millions of events per second</li>
+                        <li>Zero data loss, high reliability</li>
+                        <li>Early detection of equipment failures → reduced costs</li>
+                    </ul>
+                </li>
+                <li><b>Tech Stack:</b> Apache Kafka, ML Models, Python Consumers</li>
+            </ul>
+        </div>
+        <!-- 3 -->
+        <div class="case-study-card">
+            <h3>Modbus-Enabled Direct Machine Monitoring</h3>
+            <ul>
+                <li><b>Problem:</b>
+                    <ul>
+                        <li>Legacy machines lacked smart connectivity</li>
+                        <li>Operators relied on manual checks</li>
+                        <li>No central monitoring system</li>
+                    </ul>
+                </li>
+                <li><b>Solution:</b>
+                    <ul>
+                        <li>Direct Modbus TCP/IP polling from PLCs</li>
+                        <li>Real-time dashboard showing machine OEE</li>
+                        <li>Historical logging in time-series storage</li>
+                    </ul>
+                </li>
+                <li><b>Results:</b>
+                    <ul>
+                        <li>Reduced manual intervention</li>
+                        <li>Improved equipment utilization</li>
+                        <li>Lower downtime through proactive alerts</li>
+                    </ul>
+                </li>
+                <li><b>Tech Stack:</b> Modbus TCP/IP, SCADA Dashboard, Time-Series DB</li>
+            </ul>
+        </div>
+        <!-- 4 -->
+        <div class="case-study-card">
+            <h3>Python-Based User Management for Smart Factory Apps</h3>
+            <ul>
+                <li><b>Problem:</b>
+                    <ul>
+                        <li>Multiple apps had inconsistent logins</li>
+                        <li>No role-based access control</li>
+                        <li>Security risks from weak authentication</li>
+                    </ul>
+                </li>
+                <li><b>Solution:</b>
+                    <ul>
+                        <li>Centralized Python authentication service</li>
+                        <li>Role-based access management</li>
+                        <li>Integration with industrial apps (Batch, Alarm, Reports)</li>
+                    </ul>
+                </li>
+                <li><b>Results:</b>
+                    <ul>
+                        <li>Unified login system across apps</li>
+                        <li>Stronger security & compliance</li>
+                        <li>Improved user experience</li>
+                    </ul>
+                </li>
+                <li><b>Tech Stack:</b> Python Flask, SQL DB, JWT Authentication</li>
+            </ul>
+        </div>
+        <!-- 5 -->
+        <div class="case-study-card">
+            <h3>Batch Management System with Full Traceability</h3>
+            <ul>
+                <li><b>Problem:</b>
+                    <ul>
+                        <li>Paper-based batch recording</li>
+                        <li>No traceability of raw materials</li>
+                        <li>Manual approval delays</li>
+                    </ul>
+                </li>
+                <li><b>Solution:</b>
+                    <ul>
+                        <li>Digital batch recording system</li>
+                        <li>Barcode/RFID-based material tracking</li>
+                        <li>Automated approvals & electronic signatures</li>
+                    </ul>
+                </li>
+                <li><b>Results:</b>
+                    <ul>
+                        <li>100% traceability</li>
+                        <li>Reduced compliance risk</li>
+                        <li>Faster batch release times</li>
+                    </ul>
+                </li>
+                <li><b>Tech Stack:</b> Web App, RFID/Barcode, SQL Server</li>
+            </ul>
+        </div>
+        <!-- 6 -->
+        <div class="case-study-card">
+            <h3>Streamlit-Based Plant Performance Dashboard</h3>
+            <ul>
+                <li><b>Problem:</b>
+                    <ul>
+                        <li>Operators lacked real-time visibility</li>
+                        <li>No single source of truth for KPIs</li>
+                        <li>Manual Excel reporting took hours</li>
+                    </ul>
+                </li>
+                <li><b>Solution:</b>
+                    <ul>
+                        <li>Streamlit dashboard with SQL backend</li>
+                        <li>Real-time KPIs: OEE, downtime, alarms</li>
+                        <li>Exportable PDF reports for management</li>
+                    </ul>
+                </li>
+                <li><b>Results:</b>
+                    <ul>
+                        <li>Instant visibility of KPIs</li>
+                        <li>Data-driven decision-making</li>
+                        <li>Reduced reporting time from hours → seconds</li>
+                    </ul>
+                </li>
+                <li><b>Tech Stack:</b> Streamlit, Python, SQL Server</li>
+            </ul>
+        </div>
+        <!-- 7 -->
+        <div class="case-study-card">
+            <h3>Grafana for Industrial IoT Visualization</h3>
+            <ul>
+                <li><b>Problem:</b>
+                    <ul>
+                        <li>Complex machine data hard to visualize</li>
+                        <li>No unified monitoring tool</li>
+                        <li>Reactive instead of proactive monitoring</li>
+                    </ul>
+                </li>
+                <li><b>Solution:</b>
+                    <ul>
+                        <li>Grafana dashboards with IoT data</li>
+                        <li>Integration with MQTT + SQL</li>
+                        <li>AI anomaly detection integrated</li>
+                    </ul>
+                </li>
+                <li><b>Results:</b>
+                    <ul>
+                        <li>Unified monitoring system</li>
+                        <li>Intuitive visualization for operators</li>
+                        <li>Early fault detection</li>
+                    </ul>
+                </li>
+                <li><b>Tech Stack:</b> Grafana, MQTT, Python AI Models</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- DOWNLOAD SECTION (add Projects Case Studies PDF) -->
 <section id="download-section" class="download-section hidden">
     <h2>📥 Download Center</h2>
     <div class="download-list">
@@ -703,10 +923,13 @@ If you are working on automation, IIoT, or digital transformation projects and w
             <span>Jaydip Darbar Cover Letter (PDF)</span>
             <a href="Jaydip Darbar Cover Letter.pdf" target="_blank" class="download-link">View</a>
         </div>
-        <!-- Added IIOT Layered Architecture PDF -->
         <div class="download-item">
             <span>IIOT Layered Architecture (PDF)</span>
             <a href="IIOT Layered Architecture.pdf" target="_blank" class="download-link">View</a>
+        </div>
+        <div class="download-item">
+            <span>Projects Case Studies (PDF)</span>
+            <a href="Projects Case Studies.pdf" target="_blank" class="download-link">View</a>
         </div>
     </div>
 </section>
@@ -782,6 +1005,159 @@ If you are working on automation, IIoT, or digital transformation projects and w
         <div id="modal-blog-detail"></div>
     </div>
 </div>
+
+<!-- LIVE DEMO PROJECTS SECTION (7 project-related demos) -->
+<section id="live-demo-projects" class="live-demo-projects-section hidden">
+    <h2>🟢 Live Demo Projects</h2>
+    <div class="live-demo-list">
+        <div class="live-demo-card">
+            <h3>Cloud-Connected PLC Data Pipeline</h3>
+            <p>Simulates real-time PLC-to-cloud data transfer using Node-RED & MQTT, with SQL Server logging and live updating chart.</p>
+            <button onclick="showSection('demo-plc-cloud')">View Demo</button>
+        </div>
+        <div class="live-demo-card">
+            <h3>Kafka-Based IIoT Streaming</h3>
+            <p>Simulates high-frequency industrial data streaming to a Kafka-like pipeline, with secure remote access status.</p>
+            <button onclick="showSection('demo-kafka')">View Demo</button>
+        </div>
+        <div class="live-demo-card">
+            <h3>Modbus Data Collection Without PLC</h3>
+            <p>Shows direct Modbus RTU/TCP sensor data collection and dashboarding, with simulated sensor values and error handling.</p>
+            <button onclick="showSection('demo-modbus')">View Demo</button>
+        </div>
+        <div class="live-demo-card">
+            <h3>Python-Based 21 CFR Part 11 User Management</h3>
+            <p>Demo of a user login/audit system with RBAC, audit trail, and simulated SCADA tag integration.</p>
+            <button onclick="showSection('demo-user')">View Demo</button>
+        </div>
+        <div class="live-demo-card">
+            <h3>Custom Python Batch Manager</h3>
+            <p>Simulates batch process control with recipe steps, execution status, and real-time tracking.</p>
+            <button onclick="showSection('demo-batch')">View Demo</button>
+        </div>
+        <div class="live-demo-card">
+            <h3>Smart IIoT Operations Dashboard</h3>
+            <p>Live dashboard demo with simulated maintenance log, chat, and plant KPIs using Streamlit-style widgets.</p>
+            <button onclick="showSection('demo-dashboard')">View Demo</button>
+        </div>
+        <div class="live-demo-card">
+            <h3>Centralized Grafana Dashboard</h3>
+            <p>Simulated global plant dashboard with multi-plant data, secure access, and vendor-neutral visualization.</p>
+            <button onclick="showSection('demo-grafana')">View Demo</button>
+        </div>
+    </div>
+</section>
+
+<!-- 7 DEMO SECTIONS (hidden by default, shown when "View Demo" is clicked) -->
+<section id="demo-plc-cloud" class="iiot-demo-section hidden">
+  <h2>Cloud-Connected PLC Data Pipeline</h2>
+  <div class="iiot-demo-widget">
+    <div class="iiot-demo-row">
+      <div class="iiot-demo-card"><div class="iiot-demo-label">PLC Status</div><div id="plc-status" class="iiot-demo-value">RUN</div></div>
+      <div class="iiot-demo-card"><div class="iiot-demo-label">Temp (°C)</div><div id="plc-temp" class="iiot-demo-value">--</div></div>
+      <div class="iiot-demo-card"><div class="iiot-demo-label">Cloud MQTT</div><div id="plc-mqtt" class="iiot-demo-value">Connected</div></div>
+      <div class="iiot-demo-card"><div class="iiot-demo-label">SQL Log</div><div id="plc-sql" class="iiot-demo-value">OK</div></div>
+    </div>
+    <canvas id="plc-chart" width="420" height="120" style="margin-top:1em;"></canvas>
+  </div>
+  <div class="iiot-demo-note"><small>Simulated PLC-to-cloud pipeline with Node-RED & MQTT, visualized live.</small></div>
+</section>
+
+<section id="demo-kafka" class="iiot-demo-section hidden">
+  <h2>Kafka-Based IIoT Streaming</h2>
+  <div class="iiot-demo-widget">
+    <div class="iiot-demo-row">
+      <div class="iiot-demo-card"><div class="iiot-demo-label">Stream Status</div><div id="kafka-stream" class="iiot-demo-value">Active</div></div>
+      <div class="iiot-demo-card"><div class="iiot-demo-label">Data Rate (msg/s)</div><div id="kafka-rate" class="iiot-demo-value">--</div></div>
+      <div class="iiot-demo-card"><div class="iiot-demo-label">Remote Access</div><div id="kafka-remote" class="iiot-demo-value">Secure</div></div>
+    </div>
+    <canvas id="kafka-chart" width="420" height="120" style="margin-top:1em;"></canvas>
+  </div>
+  <div class="iiot-demo-note"><small>Simulates high-frequency streaming and secure remote access using ZeroTier VPN.</small></div>
+</section>
+
+<section id="demo-modbus" class="iiot-demo-section hidden">
+  <h2>Modbus Data Collection Without PLC</h2>
+  <div class="iiot-demo-widget">
+    <div class="iiot-demo-row">
+      <div class="iiot-demo-card"><div class="iiot-demo-label">Sensor 1 (°C)</div><div id="modbus-s1" class="iiot-demo-value">--</div></div>
+      <div class="iiot-demo-card"><div class="iiot-demo-label">Sensor 2 (bar)</div><div id="modbus-s2" class="iiot-demo-value">--</div></div>
+      <div class="iiot-demo-card"><div class="iiot-demo-label">Connection</div><div id="modbus-status" class="iiot-demo-value">OK</div></div>
+    </div>
+    <canvas id="modbus-chart" width="420" height="120" style="margin-top:1em;"></canvas>
+  </div>
+  <div class="iiot-demo-note"><small>Shows direct Modbus RTU/TCP sensor data collection and error simulation.</small></div>
+</section>
+
+<section id="demo-user" class="iiot-demo-section hidden">
+  <h2>Python-Based 21 CFR Part 11 User Management</h2>
+  <div class="iiot-demo-widget">
+    <div class="iiot-demo-row">
+      <div class="iiot-demo-card">
+        <div class="iiot-demo-label">User</div>
+        <select id="user-select" class="iiot-demo-value">
+          <option>Operator</option>
+          <option>Engineer</option>
+          <option>Admin</option>
+        </select>
+      </div>
+      <div class="iiot-demo-card">
+        <div class="iiot-demo-label">Role</div>
+        <div id="user-role" class="iiot-demo-value">Viewer</div>
+      </div>
+      <div class="iiot-demo-card">
+        <div class="iiot-demo-label">Audit Log</div>
+        <div id="user-audit" class="iiot-demo-value">0</div>
+      </div>
+    </div>
+    <button onclick="simulateAudit()" style="margin-top:1em;">Simulate Action (Audit)</button>
+    <div class="iiot-demo-note"><small>Try switching users and simulating actions to see audit log grow.</small></div>
+  </div>
+</section>
+
+<section id="demo-batch" class="iiot-demo-section hidden">
+  <h2>Custom Python Batch Manager</h2>
+  <div class="iiot-demo-widget">
+    <div class="iiot-demo-row">
+      <div class="iiot-demo-card"><div class="iiot-demo-label">Batch Step</div><div id="batch-step" class="iiot-demo-value">1</div></div>
+      <div class="iiot-demo-card"><div class="iiot-demo-label">Status</div><div id="batch-status" class="iiot-demo-value">Running</div></div>
+      <div class="iiot-demo-card"><div class="iiot-demo-label">Elapsed (s)</div><div id="batch-elapsed" class="iiot-demo-value">0</div></div>
+    </div>
+    <button onclick="toggleBatch()" style="margin-top:1em;" id="batch-toggle-btn">Pause</button>
+    <canvas id="batch-chart" width="420" height="120" style="margin-top:1em;"></canvas>
+  </div>
+  <div class="iiot-demo-note"><small>Simulates batch process steps and lets you pause/resume execution.</small></div>
+</section>
+
+<section id="demo-dashboard" class="iiot-demo-section hidden">
+  <h2>Smart IIoT Operations Dashboard</h2>
+  <div class="iiot-demo-widget">
+    <div class="iiot-demo-row">
+      <div class="iiot-demo-card"><div class="iiot-demo-label">Maintenance Log</div><div id="dash-maint" class="iiot-demo-value">0</div></div>
+      <div class="iiot-demo-card"><div class="iiot-demo-label">Chat Msgs</div><div id="dash-chat" class="iiot-demo-value">0</div></div>
+      <div class="iiot-demo-card"><div class="iiot-demo-label">Plant KPI (%)</div><div id="dash-kpi" class="iiot-demo-value">--</div></div>
+    </div>
+    <button onclick="simulateMaintenance()" style="margin-top:1em;">Add Maintenance Log</button>
+    <button onclick="simulateChat()" style="margin-top:1em;">Send Chat Message</button>
+    <canvas id="dash-chart" width="420" height="120" style="margin-top:1em;"></canvas>
+  </div>
+  <div class="iiot-demo-note"><small>Interact with maintenance and chat to see dashboard update.</small></div>
+</section>
+
+<section id="demo-grafana" class="iiot-demo-section hidden">
+  <h2>Centralized Grafana Dashboard</h2>
+  <div class="iiot-demo-widget">
+    <div class="iiot-demo-row">
+      <div class="iiot-demo-card"><div class="iiot-demo-label">Plants Online</div><div id="grafana-plants" class="iiot-demo-value">--</div></div>
+      <div class="iiot-demo-card"><div class="iiot-demo-label">Alerts</div><div id="grafana-alerts" class="iiot-demo-value">0</div></div>
+      <div class="iiot-demo-card"><div class="iiot-demo-label">Data Sources</div><div id="grafana-sources" class="iiot-demo-value">--</div></div>
+    </div>
+    <button onclick="simulateAlert()" style="margin-top:1em;">Trigger Alert</button>
+    <canvas id="grafana-chart" width="420" height="120" style="margin-top:1em;"></canvas>
+  </div>
+  <div class="iiot-demo-note"><small>Shows multi-plant status and lets you trigger alerts.</small></div>
+</section>
+</section>
 
 <footer class="site-footer">
   <div class="footer-marquee">
@@ -868,6 +1244,7 @@ If you are working on automation, IIoT, or digital transformation projects and w
     // Show project details when a card is clicked
     function showProjectDetail(num) {
         // Get the detail HTML
+       
         const detail = document.getElementById('project-detail-' + num);
         if (detail) {
             document.getElementById('modal-detail').innerHTML = detail.innerHTML;
@@ -1203,6 +1580,208 @@ mobileDrawer.addEventListener('click', function(e) {
   if (e.target === mobileDrawer) closeDrawer();
 });
 
+// PLC Cloud Demo Simulation
+(function() {
+  let temp = 40, t = 0, arr = Array(30).fill(temp);
+  setInterval(() => {
+    temp = 40 + Math.sin(t/8)*8 + Math.random()*2;
+    arr.push(temp); arr.shift(); t++;
+    if (document.getElementById('plc-temp')) {
+      document.getElementById('plc-temp').textContent = temp.toFixed(1);
+      document.getElementById('plc-status').textContent = t%30<25 ? "RUN" : "STOP";
+      document.getElementById('plc-status').style.color = t%30<25 ? "#00eaff" : "#ff4d4f";
+      document.getElementById('plc-mqtt').textContent = t%40<35 ? "Connected" : "Retrying";
+      document.getElementById('plc-mqtt').style.color = t%40<35 ? "#00eaff" : "#ffcc70";
+      document.getElementById('plc-sql').textContent = t%50<45 ? "OK" : "Error";
+      document.getElementById('plc-sql').style.color = t%50<45 ? "#00eaff" : "#ff4d4f";
+      // Draw chart
+      const canvas = document.getElementById('plc-chart');
+      if (canvas) {
+        const ctx = canvas.getContext('2d');
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        ctx.beginPath();
+        ctx.strokeStyle = "#00eaff";
+        ctx.lineWidth = 2;
+        arr.forEach((v,i) => {
+          const x = i * (canvas.width/(arr.length-1));
+          const y = canvas.height - ((v-35)/15)*canvas.height;
+          if (i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+        });
+        ctx.stroke();
+      }
+    }
+  }, 900);
+})();
+
+// Kafka Demo Simulation
+(function() {
+  let rate = 1000, t = 0, arr = Array(30).fill(rate);
+  setInterval(() => {
+    rate = 900 + Math.sin(t/5)*100 + Math.random()*50;
+    arr.push(rate); arr.shift(); t++;
+    if (document.getElementById('kafka-rate')) {
+      document.getElementById('kafka-rate').textContent = Math.round(rate);
+      // Draw chart
+      const canvas = document.getElementById('kafka-chart');
+      if (canvas) {
+        const ctx = canvas.getContext('2d');
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        ctx.beginPath();
+        ctx.strokeStyle = "#00eaff";
+        ctx.lineWidth = 2;
+        arr.forEach((v,i) => {
+          const x = i * (canvas.width/(arr.length-1));
+          const y = canvas.height - ((v-800)/400)*canvas.height;
+          if (i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+        });
+        ctx.stroke();
+      }
+    }
+  }, 900);
+})();
+
+// Modbus Demo Simulation
+(function() {
+  let s1 = 25, s2 = 1.2, t = 0, arr1 = Array(30).fill(s1), arr2 = Array(30).fill(s2);
+  setInterval(() => {
+    s1 = 25 + Math.sin(t/7)*5 + Math.random()*2;
+    s2 = 1.2 + Math.cos(t/9)*0.5 + Math.random()*0.1;
+    arr1.push(s1); arr1.shift(); arr2.push(s2); arr2.shift(); t++;
+    if (document.getElementById('modbus-s1')) {
+      document.getElementById('modbus-s1').textContent = s1.toFixed(1);
+      document.getElementById('modbus-s2').textContent = s2.toFixed(2);
+      let ok = Math.random() > 0.03;
+      document.getElementById('modbus-status').textContent = ok ? "OK" : "Error";
+      document.getElementById('modbus-status').style.color = ok ? "#00eaff" : "#ff4d4f";
+      // Draw chart
+      const canvas = document.getElementById('modbus-chart');
+      if (canvas) {
+        const ctx = canvas.getContext('2d');
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        [arr1, arr2].forEach((arr, idx) => {
+          ctx.beginPath();
+          ctx.strokeStyle = ["#00eaff","#ffcc70"][idx];
+          ctx.lineWidth = 2;
+          arr.forEach((v,i) => {
+            const x = i * (canvas.width/(arr.length-1));
+            const y = canvas.height - ((v-20)/10)*canvas.height;
+            if (i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+          });
+          ctx.stroke();
+        });
+      }
+    }
+  }, 900);
+})();
+
+// User Management Demo Simulation
+let userAuditCount = 0;
+document.getElementById('user-select')?.addEventListener('change', function() {
+  const role = this.value === "Admin" ? "Admin" : (this.value === "Engineer" ? "Editor" : "Viewer");
+  document.getElementById('user-role').textContent = role;
+});
+function simulateAudit() {
+  userAuditCount++;
+  document.getElementById('user-audit').textContent = userAuditCount;
+}
+
+// Batch Manager Demo Simulation
+let batchStep = 1, batchElapsed = 0, batchRunning = true, batchArr = Array(30).fill(1);
+function toggleBatch() {
+  batchRunning = !batchRunning;
+  document.getElementById('batch-status').textContent = batchRunning ? "Running" : "Paused";
+  document.getElementById('batch-toggle-btn').textContent = batchRunning ? "Pause" : "Resume";
+}
+setInterval(() => {
+  if (document.getElementById('batch-step')) {
+    if (batchRunning) {
+      batchElapsed++;
+      if (batchElapsed % 10 === 0) batchStep = (batchStep % 5) + 1;
+    }
+    batchArr.push(batchStep); batchArr.shift();
+    document.getElementById('batch-step').textContent = batchStep;
+    document.getElementById('batch-elapsed').textContent = batchElapsed;
+    // Draw chart
+    const canvas = document.getElementById('batch-chart');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      ctx.beginPath();
+      ctx.strokeStyle = "#00eaff";
+      ctx.lineWidth = 2;
+      batchArr.forEach((v,i) => {
+        const x = i * (canvas.width/(batchArr.length-1));
+        const y = canvas.height - ((v-1)/4)*canvas.height;
+        if (i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+      });
+      ctx.stroke();
+    }
+  }
+}, 900);
+
+// Smart IIoT Dashboard Demo Simulation
+let maintCount = 0, chatCount = 0, kpi = 80, kpiArr = Array(30).fill(kpi);
+function simulateMaintenance() {
+  maintCount++;
+  document.getElementById('dash-maint').textContent = maintCount;
+}
+function simulateChat() {
+  chatCount++;
+  document.getElementById('dash-chat').textContent = chatCount;
+}
+setInterval(() => {
+  if (document.getElementById('dash-kpi')) {
+    kpi = 80 + Math.sin(Date.now()/3000)*10 + Math.random()*2;
+    kpiArr.push(kpi); kpiArr.shift();
+    document.getElementById('dash-kpi').textContent = kpi.toFixed(1);
+    // Draw chart
+    const canvas = document.getElementById('dash-chart');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      ctx.beginPath();
+      ctx.strokeStyle = "#00eaff";
+      ctx.lineWidth = 2;
+      kpiArr.forEach((v,i) => {
+        const x = i * (canvas.width/(kpiArr.length-1));
+        const y = canvas.height - ((v-70)/20)*canvas.height;
+        if (i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+      });
+      ctx.stroke();
+    }
+  }
+}, 900);
+
+// Grafana Demo Simulation
+let plantsOnline = 3, alerts = 0, sources = 2, plantsArr = Array(30).fill(plantsOnline);
+function simulateAlert() {
+  alerts++;
+  document.getElementById('grafana-alerts').textContent = alerts;
+}
+setInterval(() => {
+  if (document.getElementById('grafana-plants')) {
+    plantsOnline = 3 + Math.round(Math.sin(Date.now()/5000));
+    sources = 2 + Math.round(Math.cos(Date.now()/7000));
+    plantsArr.push(plantsOnline); plantsArr.shift();
+    document.getElementById('grafana-plants').textContent = plantsOnline;
+    document.getElementById('grafana-sources').textContent = sources;
+    // Draw chart
+    const canvas = document.getElementById('grafana-chart');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      ctx.beginPath();
+      ctx.strokeStyle = "#00eaff";
+      ctx.lineWidth = 2;
+      plantsArr.forEach((v,i) => {
+        const x = i * (canvas.width/(plantsArr.length-1));
+        const y = canvas.height - ((v-2)/5)*canvas.height;
+        if (i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+      });
+      ctx.stroke();
+    }
+  }
+}, 900);
 </script>
 
 </body>
