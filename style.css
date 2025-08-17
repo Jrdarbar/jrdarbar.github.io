@@ -38,10 +38,11 @@ body::before {
 /* Navigation & Header */
 header {
     background: rgba(0, 0, 0, 0.5);
-    padding: 1rem 2rem;
+    padding: 0.2rem 0.8rem;
     position: sticky;
     top: 0;
     z-index: 1000;
+    min-height: 36px;
 }
 
 nav {
@@ -74,6 +75,11 @@ nav ul li a:hover {
     color: #ffcc70;
 }
 
+.header-nav {
+    min-height: 36px;
+    padding: 0.1em 0.8em 0.1em 0.8em;
+}
+
 /* Section Visibility */
 .hidden {
     display: none !important;
@@ -90,17 +96,18 @@ nav ul li a:hover {
 }
 
 .hero-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: auto;
+  display: flex;
+  align-items: stretch; /* Ensures left/right fill container height */
+  justify-content: space-between;
 }
 
 .hero-left {
-    flex: 1;
-    animation: fadeInLeft 1s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Always start at top */
+  align-items: flex-start;     /* Align children to left */
+  flex: 1;
+  margin-left: 100px; /* Add space between skills bar and hero content */
 }
 
 .hero-right {
@@ -214,12 +221,15 @@ nav ul li a:hover {
     right: 0;
     z-index: 1002;
     display: flex;
-    gap: 0.5rem;
-    background: rgba(34, 40, 49, 0.95);
-    padding: 0.5rem 1.2rem 0.5rem 1.2rem;
-    border-radius: 0 0 0 2rem;
+    gap: 0.5em;
+    background: rgba(34,40,49,0.95);
+    border-radius: 0 0 0 1.2em;
     box-shadow: 0 2px 12px #1976d244;
+    padding: 0.2em 0.7em 0.2em 0.7em;
+    align-items: center;
+    height: 44px; /* Match your header height */
 }
+
 .nav-btn {
     display: flex;
     align-items: center;
@@ -232,10 +242,12 @@ nav ul li a:hover {
     cursor: pointer;
     margin: 0 2px;
 }
+
 .nav-btn:hover {
     background: #1976d2;
     box-shadow: 0 2px 8px #1976d288;
 }
+
 @media (max-width: 700px) {
     .global-top-buttons {
         flex-wrap: wrap;
@@ -249,28 +261,52 @@ nav ul li a:hover {
 
 /* About Section - Advanced Card */
 .about-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    background: linear-gradient(135deg, #212b36 0%, #263238 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: linear-gradient(135deg, #212b36 0%, #263238 100%);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+  grid-template-rows: 1fr;           /* Only 1 row */
+  gap: 2rem;
+  width: 90vw;
+  max-width: 1200px;
+  padding: 2rem;
 }
 
 .about-card {
-    background: linear-gradient(135deg, #263238 0%, #37474f 100%);
-    border-radius: 32px;
-    box-shadow: 0 12px 48px #1976d2aa, 0 2px 8px #fff2 inset;
-    padding: 2.5rem 2.5rem 2rem 2.5rem;
-    max-width: 650px;
-    width: 90vw;
-    color: #e0e0e0;
-    border: 1px solid #1976d2;
-    position: relative;
-    overflow: hidden;
+  background: linear-gradient(135deg, #263238 0%, #37474f 100%);
+  border-radius: 32px;
+  box-shadow: 0 12px 48px #1976d2aa, 0 2px 8px #fff2 inset;
+  padding: 2rem;
+  color: #e0e0e0;
+  border: 1px solid #1976d2;
+  position: relative;
+  overflow: hidden;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* Center all content horizontally */
+  justify-content: center;
+  text-align: center;       /* Center text inside the card */
 }
 
 .about-header {
     text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* Center header items */
+    text-align: center;
+    gap: 0.5rem;
     margin-bottom: 2rem;
 }
 
@@ -287,6 +323,7 @@ nav ul li a:hover {
     margin-top: 0.5rem;
     font-weight: bold;
     text-shadow: 0 2px 8px #1976d2;
+    text-align: center;
 }
 
 .about-body p {
@@ -574,16 +611,6 @@ nav ul li a:hover {
 }
 .drawer-link:hover {
   color: #90caf9;
-}
-
-/* Show hamburger and hide top buttons on small screens */
-@media (max-width: 900px) {
-  .hamburger {
-    display: flex;
-  }
-  .global-top-buttons {
-    display: none !important;
-  }
 }
 
 .hero-skills-row {
@@ -1080,7 +1107,18 @@ section, .about-card, .project-card, .blog-card-mini, .modal-content, .blog-moda
     color: #90caf9;
     font-size: 1.1em;
     font-weight: 500;
-    margin-top: 0.2em;
+    margin-top: 0.8em;
+    letter-spacing: 1px;
+}
+
+.header-right-tagline {
+    color: #ffcc70;
+    font-size: 1.1em;
+    font-weight: normal;
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 2.0em;
+    margin-bottom: 0.2em;
     letter-spacing: 1px;
 }
 
@@ -1099,10 +1137,12 @@ section, .about-card, .project-card, .blog-card-mini, .modal-content, .blog-moda
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.5em;
-    padding: 0.7em 1.5em 0.7em 2em;
+    gap: 0.1em;
+    padding: 0.3em 1em 0.3em 1.2em; /* Reduce padding */
     background: transparent;
+    min-height: 5px;               /* Lower min height */
 }
+
 .header-left {
     display: flex;
     align-items: center;
@@ -1113,10 +1153,6 @@ section, .about-card, .project-card, .blog-card-mini, .modal-content, .blog-moda
     font-weight: bold;
     color: #ffcc70;
     white-space: nowrap;
-}
-.global-top-buttons {
-    display: flex;
-    gap: 0.5em;
 }
 
 /* Footer Section */
@@ -1129,22 +1165,24 @@ section, .about-card, .project-card, .blog-card-mini, .modal-content, .blog-moda
   margin-top: 2em;
 }
 
-/* Skills Bar */
+
 .skills-bar {
-  position: fixed;
-  top: 194px;
-  left: 24px;
+  position: absolute;
+  top: 40px;           /* Adjust as needed for spacing from top */
+  left: 0;
+  height: auto;
+  width: 80px;
   background: #101726ee;
   border-radius: 14px;
   border: 2px solid #232b36;
-  padding: 14px 10px 14px 10px;
+  padding: 14px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 100;
+  z-index: 10;
   box-shadow: 0 2px 16px #000a;
-  width: 80px;
 }
+
 .skills-title {
   color: #fff;
   font-weight: bold;
@@ -1153,6 +1191,7 @@ section, .about-card, .project-card, .blog-card-mini, .modal-content, .blog-moda
   letter-spacing: 1px;
   text-align: center;
 }
+
 .skills-icon {
   width: 48px;
   height: 48px;
@@ -1164,10 +1203,12 @@ section, .about-card, .project-card, .blog-card-mini, .modal-content, .blog-moda
   display: block;
   transition: transform 0.2s, box-shadow 0.2s;
 }
+
 .skills-icon:hover {
   transform: scale(1.08);
   box-shadow: 0 4px 16px #1976d299;
 }
+
 @media (max-width: 700px) {
   .skills-bar {
     left: 2px;
@@ -1185,3 +1226,23 @@ section, .about-card, .project-card, .blog-card-mini, .modal-content, .blog-moda
   }
 }
 
+/* Floating IIoT/Industry 4.0 SVG symbol styles */
+.floating-symbol {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.55;
+  animation: floatY 8s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 8px #00eaff88);
+}
+.symbol-robot   { top: 8%;  left: 12%;  animation-delay: 0s; }
+.symbol-factory { top: 18%; right: 10%; animation-delay: 2s; }
+.symbol-cloud   { bottom: 12%; left: 18%; animation-delay: 1.5s; }
+.symbol-chip    { bottom: 16%; right: 16%; animation-delay: 3s; }
+.symbol-network { top: 40%; left: 45%; animation-delay: 4s; }
+
+@keyframes floatY {
+  0%   { transform: translateY(0) scale(1); }
+  50%  { transform: translateY(-24px) scale(1.08); }
+  100% { transform: translateY(0) scale(1); }
+}
