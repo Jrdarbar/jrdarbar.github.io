@@ -52,6 +52,7 @@
             align-items: center;
         }
     </style>
+    <script src="https://cdn.counter.dev/script.js" data-id="920e31cf-7053-43a8-a55f-2dfa0b411509" data-utcoffset="6"></script>
 </head>
 <body>
 
@@ -1168,6 +1169,10 @@ If you are working on automation, IIoT, or digital transformation projects and w
   </div>
   <div class="footer-credit">
     &copy; 2025 Jaydip Darbar &mdash; Industrial Automation & IIoT Portfolio
+    <br>
+    <span id="visitor-counter" style="font-size:1em;color:#00eaff;font-weight:bold;">
+      Visitors: <span id="counter-value">...</span>
+    </span>
   </div>
 </footer>
 
@@ -1556,7 +1561,6 @@ function toggleTheme() {
     if (localStorage.getItem('theme') === 'light') {
         document.body.classList.add('light-theme');
     }
-})();
 
 // Hero Image Glow/Pulse
 document.addEventListener('DOMContentLoaded', function() {
@@ -1783,6 +1787,18 @@ setInterval(() => {
     }
   }
 }, 900);
+})();
+
+// Live visitor counter from counter.dev
+fetch('https://api.counter.dev/count?id=920e31cf-7053-43a8-a55f-2dfa0b411509')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('counter-value').textContent = data.count;
+  })
+  .catch(() => {
+    document.getElementById('counter-value').textContent = 'N/A';
+  });
+
 </script>
 
 </body>
