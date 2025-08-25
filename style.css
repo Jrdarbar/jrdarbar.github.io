@@ -248,6 +248,14 @@ nav ul li a:hover {
     box-shadow: 0 2px 8px #1976d288;
 }
 
+.nav-btn:hover, .download-link:hover, .blog-card-mini:hover {
+    background: #1976d2;
+    color: #fff;
+    box-shadow: 0 2px 12px #00eaff;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
 @media (max-width: 700px) {
     .global-top-buttons {
         flex-wrap: wrap;
@@ -1399,4 +1407,16 @@ section, .about-card, .project-card, .blog-card-mini, .modal-content, .blog-moda
 }
 .case-study-card li {
     margin-bottom: 0.2em;
+}
+
+/* Certificate Section */
+.certificate-section {
+    padding: 2em 0;
+    text-align: center;
+}
+.certificate-gallery img {
+    max-width: 480px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px #1976d2;
 }
