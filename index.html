@@ -494,6 +494,16 @@ If you are working on automation, IIoT, or digital transformation projects and w
             <h3>Centralized Grafana Dashboard</h3>
             <p>Global plant performance dashboards with secure, vendor-neutral visualization.</p>
         </div>
+        <div class="project-card">
+            <!-- Custom Icon for IP Monitor -->
+            <svg class="project-icon" viewBox="0 0 48 48">
+                <rect x="8" y="16" width="32" height="16" rx="8" fill="#00eaff"/>
+                <circle cx="24" cy="24" r="8" fill="#1976d2"/>
+                <rect x="18" y="32" width="12" height="4" rx="2" fill="#ffcc70"/>
+            </svg>
+            <h3>IP Monitor & Auto-Blocker</h3>
+            <p>Auto-blocks unauthorized IPs, shows real-time network activity, and provides security event reporting.</p>
+        </div>
     </div>
     <div class="note-box">
         <strong>
@@ -699,16 +709,28 @@ If you are working on automation, IIoT, or digital transformation projects and w
             </li>
         </ul>
     </div>
-</section>
 
-<!-- PROJECT DETAIL MODAL -->
-<div id="project-modal" class="modal hidden">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closeProjectModal()">&times;</span>
-        <div id="modal-detail"></div>
-    </div>
+    <div class="project-detail hidden" id="project-detail-8">
+    <h4>IP Monitor & Auto-Blocker</h4>
+    <ul>
+        <li><b>Goal:</b> Secure a specific device (server, SCADA PC, or engineering workstation) by automatically blocking unauthorized IPs and providing a real-time view of network activity.</li>
+        <li><b>Features:</b>
+            <ul>
+                <li>Monitors network traffic (ARP + ICMP) in real time</li>
+                <li>Auto-blocks unauthorized IPs via Windows Firewall</li>
+                <li>Manual block/unblock controls with persistent rules</li>
+                <li>Shows auto-blocked & manual-blocked IPs in separate views</li>
+                <li>Logs all events (timestamp, IP, MAC, vendor, action)</li>
+                <li>Allows configuration of allowed IP ranges & always-allowed IPs</li>
+                <li>Supports alerts (Telegram / PLC write mode)</li>
+                <li>Provides a report viewer for security events</li>
+            </ul>
+        </li>
+        <li><b>Where It Runs:</b> Installed on a server, SCADA PC, or any Windows host that needs to be protected. Protects only the machine where it runs.</li>
+        <li><b>Tech Stack:</b> Python (Tkinter, Scapy), Windows Firewall automation, JSON for configs & logs</li>
+    </ul>
 </div>
-
+</section>
 
 <!-- CASE STUDIES SECTION -->
 <section id="case-studies-section" class="case-studies-section hidden">
@@ -911,6 +933,34 @@ If you are working on automation, IIoT, or digital transformation projects and w
                 <li><b>Tech Stack:</b> Grafana, MQTT, Python AI Models</li>
             </ul>
         </div>
+        <!-- NEW CASE STUDY CARD -->
+        <div class="case-study-card">
+            <h3>🔒 IP Monitor & Auto-Blocker for OT/IT Security</h3>
+            <p>
+                In flat industrial networks, any device can reach critical assets, creating security risks. I built a Python-based IP Monitor & Auto-Blocker to protect a key server by automatically blocking unauthorized IPs and alerting operators.
+            </p>
+            <ul>
+                <li><b>Problem:</b> No centralized firewall, need to block unknown IPs, alert operators, and provide easy manual controls.</li>
+                <li><b>Solution:</b>
+                    <ul>
+                        <li>Real-time ARP & ICMP monitoring</li>
+                        <li>Auto-block/unblock via Windows Firewall</li>
+                        <li>Manual block/unblock with persistent rules</li>
+                        <li>Alerts via Telegram or PLC</li>
+                        <li>Operator-friendly GUI</li>
+                    </ul>
+                </li>
+                <li><b>Key Features:</b>
+                    <ul>
+                        <li>Host-level protection</li>
+                        <li>Dynamic firewall rules</li>
+                        <li>Event logging & audit trail</li>
+                        <li>Color-coded report viewer</li>
+                    </ul>
+                </li>
+                <li><b>Tech Stack:</b> Python, Tkinter, Scapy, Windows Firewall, JSON</li>
+            </ul>
+        </div>
     </div>
 </section>
 
@@ -954,6 +1004,14 @@ If you are working on automation, IIoT, or digital transformation projects and w
         <div class="download-item">
             <span>Grafana on Local and Public Full Documentation </span>
             <a href="Grafana on local and public Full Documentation.pdf" target="_blank" class="download-link">View</a>
+        </div>
+        <div class="download-item">
+            <span>IP Monitor Configuration App Documentation</span>
+            <a href="IP Monitor Configuration App.pdf" target="_blank" class="download-link">View</a>
+        </div>
+        <div class="download-item">
+            <span>IP Monitor & Blocker – Documentation</span>
+            <a href="IP Monitor & Blocker – Documentation.pdf" target="_blank" class="download-link">View</a>
         </div>
     </div>
 </section>
@@ -1064,6 +1122,10 @@ If you are working on automation, IIoT, or digital transformation projects and w
         <img src="24.PNG" alt="24">
         <img src="25.PNG" alt="25">
         <img src="26.PNG" alt="26">
+        <img src="Main Image Cyber.PNG" alt="Main Image Cyber">
+        <img src="Main Image Cyber_1.PNG" alt="Main Image Cyber 1">
+        <img src="Main Image Cyber_2.PNG" alt="Main Image Cyber 2">
+        <img src="Main Image Cyber_3.PNG" alt="Main Image Cyber 3">
     </div>
 </section>
 
@@ -1202,26 +1264,6 @@ If you are working on automation, IIoT, or digital transformation projects and w
       <div class="iiot-demo-card">
         <div class="iiot-demo-label">User</div>
         <select id="user-select" class="iiot-demo-value">
-          <option>Operator</option>
-          <option>Engineer</option>
-          <option>Admin</option>
-        </select>
-      </div>
-      <div class="iiot-demo-card">
-<section id="demo-batch" class="iiot-demo-section hidden">
-  <h2>Custom Python Batch Manager</h2>
-  <div class="iiot-demo-widget">
-    <div class="iiot-demo-row">
-      <div class="iiot-demo-card"><div class="iiot-demo-label">Batch Step</div><div id="batch-step" class="iiot-demo-value">1</div></div>
-      <div class="iiot-demo-card"><div class="iiot-demo-label">Status</div><div id="batch-status" class="iiot-demo-value">Running</div></div>
-      <div class="iiot-demo-card"><div class="iiot-demo-label">Elapsed (s)</div><div id="batch-elapsed" class="iiot-demo-value">0</div></div>
-    </div>
-    <button onclick="toggleBatch()" style="margin-top:1em;" id="batch-toggle-btn">Pause</button>
-    <canvas id="batch-chart" width="420" height="120" style="margin-top:1em;"></canvas>
-  </div>
-  <div class="iiot-demo-note"><small>Simulates batch process steps and lets you pause/resume execution.</small></div>
-</section>
-
 <section id="demo-dashboard" class="iiot-demo-section hidden">
   <h2>Smart IIoT Operations Dashboard</h2>
   <div class="iiot-demo-widget">
